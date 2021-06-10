@@ -45,7 +45,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.1.43",
-    "@balena/jellyfish-plugin-base": "2.1.133-add-translate-options-b608bc70e171274e460d206b7800a3648259e21c",
+    "@balena/jellyfish-plugin-base": "^2.1.146",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
