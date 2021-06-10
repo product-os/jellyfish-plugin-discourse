@@ -24,7 +24,7 @@ export class DiscoursePlugin extends JellyfishPluginBase {
 			requires: [
 				{
 					slug: 'action-library',
-					version: '>=12.x',
+					version: '>=13.x',
 				},
 				{
 					slug: 'jellyfish-plugin-default',
