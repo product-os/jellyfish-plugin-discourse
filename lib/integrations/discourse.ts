@@ -1188,7 +1188,7 @@ module.exports = class DiscourseIntegration implements Integration {
 					this.options.errors.SyncExternalRequestError,
 					() => {
 						return [
-							`Could not update comment ${topicResponse.id}`,
+							`Could not update comment ${postData.id}`,
 							`with content: ${messageBody}:`,
 							JSON.stringify(editResponse, null, 2),
 						].join(' ');
