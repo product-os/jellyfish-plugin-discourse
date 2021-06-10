@@ -1,0 +1,33 @@
+- commits:
+    - subject: Update jellyfish-plugin-base to v2.1.146
+      hash: 7cfb70cb130a98e428bb80aa783709744ec51142
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update version of required action-library plugin
+      hash: ccc2e0e8d02c99edae147c7427f679b46699b904
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'Add code, convert to TypeScript'
+      hash: 6b700e59881acf99b256c2e376d2e9d7ef97071d
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.0
+  date: 2021-06-10T04:49:05.654Z
