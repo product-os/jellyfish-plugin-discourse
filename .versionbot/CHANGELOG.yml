@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix error where 'topicResponse' is accessed before initialization
+      hash: 47118c96f02401b659ed24711f44e0ecb7d6c8e9
+      body: |
+        Fixes https://github.com/product-os/jellyfish/issues/6610
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+        signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+      author: Lucian Buzzo
+      nested: []
+  version: 1.0.1
+  date: 2021-06-10T11:50:56.884Z
+- commits:
     - subject: Update jellyfish-plugin-base to v2.1.146
       hash: 7cfb70cb130a98e428bb80aa783709744ec51142
       body: ''
