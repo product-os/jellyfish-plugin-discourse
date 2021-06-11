@@ -1,9 +1,9 @@
 tickTimeout: 5
 retryTimeout: 120
-attemptsDefault: 3
+attemptsDefault: 1
 tasks:
-  - name: 'integration'
+  - name: 'integration-tests'
     description: 'Integration Tests'
-    command: 'make test-integration'
+    command: 'npm run integration'
     cwd: '/usr/src/jellyfish'
     required: true
