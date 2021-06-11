@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update docker/compose files
+      hash: 3d8ccf2cdb8e7fa346ed49414ddde351235f814c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.2
+  date: 2021-06-11T02:26:51.408Z
+- commits:
     - subject: Fix error where 'topicResponse' is accessed before initialization
       hash: 47118c96f02401b659ed24711f44e0ecb7d6c8e9
       body: |
