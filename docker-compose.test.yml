@@ -1,3 +1,6 @@
+# This file is auto-synced from product-os/jellyfish-config/sync/docker-compose.test.yml
+# and should only be edited there!
+
 version: '2.1'
 
 services:
@@ -23,13 +26,9 @@ services:
       - REDIS_PORT=6379
       - OAUTH_REDIRECT_BASE_URL=https://jel.ly.fish
       - INTEGRATION_DEFAULT_USER=admin
-      - TEST_INTEGRATION_DISCOURSE_CATEGORY=44
-      - TEST_INTEGRATION_DISCOURSE_USERNAME=jellyfish
-      - TEST_INTEGRATION_DISCOURSE_NON_MODERATOR_USERNAME=jellyfish-test
-      - INTEGRATION_DISCOURSE_SIGNATURE_KEY
-      - INTEGRATION_DISCOURSE_TOKEN
-      - INTEGRATION_DISCOURSE_USERNAME
       - CI=1
       - NPM_TOKEN
+    env_file:
+      - test.env
     networks:
       - internal
