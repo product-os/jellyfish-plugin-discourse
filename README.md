@@ -8,7 +8,7 @@ Below is an example how to use this library:
 
 ```js
 import { cardMixins } from '@balena/jellyfish-core';
-import DiscoursePlugin from '@balena/jellyfish-plugin-discourse';
+import { DiscoursePlugin } from '@balena/jellyfish-plugin-discourse';
 
 const plugin = new DiscoursePlugin();
 
