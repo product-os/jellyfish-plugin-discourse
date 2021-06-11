@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix example usage in readme
+      hash: ecd4729b8a68e51fbda71e2c4f0277640e23bd2d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.4
+  date: 2021-06-11T08:51:01.790Z
+- commits:
     - subject: Remove Makefile
       hash: 63ad1cce3c629e097b7ae3a54ccc739660695536
       body: ''
