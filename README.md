@@ -22,3 +22,14 @@ console.dir(cards);
 [![Publish Documentation](https://github.com/product-os/jellyfish-plugin-discourse/actions/workflows/publish-docs.yml/badge.svg)](https://github.com/product-os/jellyfish-plugin-discourse/actions/workflows/publish-docs.yml)
 
 Visit the website for complete documentation: https://product-os.github.io/jellyfish-plugin-discourse
+
+# Testing
+
+Unit tests can be easily run with the command `npm test`.
+
+The integration tests require a postgres DB and redis server. The simplest way to run the tests locally is with docker-compose.
+You may need to export an `NPM_TOKEN` and values for the environment variables defined in `test.env` before running the command below.
+
+```
+docker-compose -f docker-compose.test.yml -f docker-compose.yml up --build --exit-code-from=sut
+```
