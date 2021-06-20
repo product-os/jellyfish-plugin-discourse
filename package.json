@@ -45,14 +45,14 @@
   "author": "Balena.io. <hello@balena.io>",
   "license": "UNLICENSED",
   "dependencies": {
-    "@balena/jellyfish-assert": "^1.1.43",
-    "@balena/jellyfish-plugin-base": "^2.1.146",
+    "@balena/jellyfish-assert": "^1.1.49",
+    "@balena/jellyfish-plugin-base": "^2.1.158",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
   },
   "devDependencies": {
-    "@balena/ci-task-runner": "^0.2.160",
+    "@balena/ci-task-runner": "^0.2.168",
     "@balena/jellycheck": "^0.1.1",
     "@balena/jellyfish-action-library": "^13.0.1",
     "@balena/jellyfish-config": "^1.2.7",
