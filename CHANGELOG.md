@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.10 - 2021-06-22
+
+* patch: Update dependency @balena/ci-task-runner to ^0.3.1 [Renovate Bot]
+
 ## 1.0.9 - 2021-06-22
 
 * patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.161 [Renovate Bot]
