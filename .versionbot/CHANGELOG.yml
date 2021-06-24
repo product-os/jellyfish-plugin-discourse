@@ -1,4 +1,27 @@
 - commits:
+    - subject: Bump jellyfish-core dev dependency
+      hash: a6a087422f2425af77e9351b95d0cfaed014e779
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Graham McCulloch <graham@balena.io>
+        signed-off-by: Graham McCulloch <graham@balena.io>
+      author: Graham McCulloch
+      nested: []
+    - subject: Update test expected results
+      hash: b6f46dc892002931bf7f5e84c823df4613e6c5a4
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Graham McCulloch <graham@balena.io>
+        signed-off-by: Graham McCulloch <graham@balena.io>
+      author: Graham McCulloch
+      nested: []
+  version: 1.0.15
+  date: 2021-06-24T05:33:10.284Z
+- commits:
     - subject: Add JF peer dependencies
       hash: 954da382e2d7b090878cdbaa7f2622890107d1ae
       body: ''

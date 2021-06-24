@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.15 - 2021-06-24
+
+* Bump jellyfish-core dev dependency [Graham McCulloch]
+* Update test expected results [Graham McCulloch]
+
 ## 1.0.14 - 2021-06-24
 
 * Add JF peer dependencies [Josh Bowling]
