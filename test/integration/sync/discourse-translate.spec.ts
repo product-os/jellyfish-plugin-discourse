@@ -8,7 +8,6 @@ import ActionLibrary from '@balena/jellyfish-action-library';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
 import { DiscoursePlugin } from '../../../lib';
-import DiscourseIntegration from '../../../lib/integrations';
 import webhooks from './webhooks/discourse';
 
 // tslint:disable-next-line: no-var-requires
@@ -28,7 +27,6 @@ syncIntegrationScenario.run(
 		basePath: __dirname,
 		plugins: [ActionLibrary, DefaultPlugin, DiscoursePlugin],
 		cards: ['support-thread', 'message', 'whisper'],
-		integration: DiscourseIntegration,
 		scenarios: webhooks,
 		baseUrl: 'https://forums.balena.io',
 		stubRegex: /.*/,
