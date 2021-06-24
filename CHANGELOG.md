@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.14 - 2021-06-24
+
+* Add JF peer dependencies [Josh Bowling]
+* Update test-harness call [Josh Bowling]
+
 ## 1.0.13 - 2021-06-24
 
 * patch: Update internal-patch [Renovate Bot]
