@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.21 - 2021-06-27
+
+* patch: Update dependency typedoc to ^0.21.2 [Renovate Bot]
+
 ## 1.0.20 - 2021-06-26
 
 * patch: Update external-non-major [Renovate Bot]
