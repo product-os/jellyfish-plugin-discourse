@@ -52,7 +52,7 @@
     "lru-cache": "^6.0.0"
   },
   "devDependencies": {
-    "@balena/ci-task-runner": "^0.3.2",
+    "@balena/ci-task-runner": "^0.3.3",
     "@balena/jellycheck": "^0.1.1",
     "@balena/jellyfish-action-library": "^14.0.7",
     "@balena/jellyfish-config": "^1.3.3",
