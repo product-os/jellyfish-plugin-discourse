@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.27 - 2021-06-29
+
+* patch: Update dependency @balena/jellyfish-test-harness to v5 [Renovate Bot]
+
 ## 1.0.26 - 2021-06-29
 
 * patch: Update internal-patch [Renovate Bot]
