@@ -7,7 +7,7 @@
     "url": "https://github.com/product-os/jellyfish-plugin-discourse"
   },
   "engines": {
-    "node": ">=12.15.0"
+    "node": ">=14.2.0"
   },
   "main": "build/index.js",
   "types": "build/index.d.ts",
