@@ -1,4 +1,37 @@
 - commits:
+    - subject: Remove package-lock.json from Dockerfile
+      hash: 13dea563c4ca9c687bbf63073f4b95d34f5d4ce8
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Bump node engines specification
+      hash: ba04d62632e69298931ddbc1deaf0578e13dd334
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Remove package-lock.json
+      hash: e14d3b9ca68788744ba3f9eaaf866f4d37e012a9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.24
+  date: 2021-06-29T08:34:40.205Z
+- commits:
     - subject: 'patch: Update dependency @balena/ci-task-runner to ^0.3.3'
       hash: 02ad1a1ae4a72a932aef96c209f1fb966af6fdde
       body: ''

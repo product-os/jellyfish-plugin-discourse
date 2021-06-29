@@ -4,6 +4,12 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.24 - 2021-06-29
+
+* Remove package-lock.json from Dockerfile [Josh Bowling]
+* Bump node engines specification [Josh Bowling]
+* Remove package-lock.json [Josh Bowling]
+
 ## 1.0.23 - 2021-06-27
 
 * patch: Update dependency @balena/ci-task-runner to ^0.3.3 [Renovate Bot]
