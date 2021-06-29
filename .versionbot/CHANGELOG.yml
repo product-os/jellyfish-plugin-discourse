@@ -1,4 +1,15 @@
 - commits:
+    - subject: "\U0001F504 Synced file(s) with product-os/jellyfish-config"
+      hash: 64fbb07a2e230a0cf54d7f6de74baa517e3671a0
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: jellyfish-bot
+      nested: []
+  version: 1.0.25
+  date: 2021-06-29T10:06:10.472Z
+- commits:
     - subject: Remove package-lock.json from Dockerfile
       hash: 13dea563c4ca9c687bbf63073f4b95d34f5d4ce8
       body: ''

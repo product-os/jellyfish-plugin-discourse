@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.25 - 2021-06-29
+
+* 🔄 Synced file(s) with product-os/jellyfish-config [jellyfish-bot]
+
 ## 1.0.24 - 2021-06-29
 
 * Remove package-lock.json from Dockerfile [Josh Bowling]
