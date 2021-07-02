@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.32 - 2021-07-02
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.0.31 - 2021-07-02
 
 * Bump jellyfish-test-harness to v5.1.0 [Josh Bowling]
