@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.31 - 2021-07-02
+
+* Bump jellyfish-test-harness to v5.1.0 [Josh Bowling]
+* Replace ci-task-runner with go-task [Josh Bowling]
+
 ## 1.0.30 - 2021-06-30
 
 * patch: Update dependency @balena/jellyfish-plugin-default to v16 [Renovate Bot]
