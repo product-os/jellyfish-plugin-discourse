@@ -5,13 +5,12 @@
  */
 
 import ActionLibrary from '@balena/jellyfish-action-library';
+import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
 import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
 import nock from 'nock';
 import { v4 as uuidv4 } from 'uuid';
 import { DiscoursePlugin } from '../../../lib';
 
-// tslint:disable-next-line: no-var-requires
-const DefaultPlugin = require('@balena/jellyfish-plugin-default');
 const context: any = {
 	id: 'jellyfish-plugin-discourse-test',
 };
