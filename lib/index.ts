@@ -28,7 +28,7 @@ export class DiscoursePlugin extends JellyfishPluginBase {
 				},
 				{
 					slug: 'jellyfish-plugin-default',
-					version: '>=13.x',
+					version: '>=19.x',
 				},
 			],
 		});
