@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.0.48 - 2021-07-17
+
+* Remove whitesource config [Josh Bowling]
+
 ## 1.0.47 - 2021-07-16
 
 * Update plugin-default imports [Josh Bowling]
