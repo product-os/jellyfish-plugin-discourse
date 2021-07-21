@@ -512,6 +512,19 @@ function getMirrorId(baseUrl: string, event: any): string {
 }
 
 /**
+ * @summary Get the loop to associate with an event payload
+ * @function
+ * @private
+ *
+ * @param {Object} event - Discourse event
+ * @returns {String} the versioned slug loop
+ */
+function getLoop(_event: any): string {
+	// TODO: cases for other loops
+	return `loop-balena-io@1.0.0`;
+}
+
+/**
  * @summary Build a new thread card from topic data
  * @function
  * @private
@@ -531,6 +544,7 @@ function getThreadCard(mirrorId: string, data: any, options: any = {}): any {
 		active: _.isBoolean(options.active) ? options.active : !data.deleted_at,
 		type: 'support-thread@1.0.0',
 		slug: `support-thread-discourse-${data.id}`,
+		loop: getLoop(data),
 		data: {
 			environment: 'production',
 			tags: data.tags,

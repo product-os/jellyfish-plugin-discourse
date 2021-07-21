@@ -7,6 +7,7 @@
 import ActionLibrary from '@balena/jellyfish-action-library';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
+import { ProductOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
 import { DiscoursePlugin } from '../../../lib';
 import webhooks from './webhooks/discourse';
@@ -23,8 +24,8 @@ syncIntegrationScenario.run(
 	},
 	{
 		basePath: __dirname,
-		plugins: [ActionLibrary, DefaultPlugin, DiscoursePlugin],
-		cards: ['support-thread', 'message', 'whisper'],
+		plugins: [ActionLibrary, DefaultPlugin, ProductOsPlugin, DiscoursePlugin],
+		cards: ['support-thread', 'message', 'whisper', 'loop-balena-io'],
 		scenarios: webhooks,
 		baseUrl: 'https://forums.balena.io',
 		stubRegex: /.*/,
