@@ -6,6 +6,7 @@
 
 import ActionLibrary from '@balena/jellyfish-action-library';
 import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
+import { ProductOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
 import nock from 'nock';
 import { v4 as uuidv4 } from 'uuid';
@@ -16,8 +17,13 @@ const context: any = {
 };
 
 beforeAll(async () => {
-	const plugins = [ActionLibrary, DefaultPlugin, DiscoursePlugin];
-	const cards = ['support-thread', 'message', 'whisper'];
+	const plugins = [
+		ActionLibrary,
+		DefaultPlugin,
+		ProductOsPlugin,
+		DiscoursePlugin,
+	];
+	const cards = ['support-thread', 'message', 'whisper', 'loop-balena-io'];
 	await syncIntegrationScenario.before(context, plugins, cards);
 	await syncIntegrationScenario.save(context);
 });
