@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.0 - 2021-07-21
+
+* Set the loop field of synced support threads [Graham McCulloch]
+
 ## 1.0.51 - 2021-07-17
 
 * patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.203 [Renovate Bot]
