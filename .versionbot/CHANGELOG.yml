@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: 48ad85ddc6ebf8863e9da9e8b54891bd66dea4d0
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.5
+  date: 2021-08-21T17:32:00.206Z
+- commits:
     - subject: Bump jellyfish-test-harness to v6.1.0
       hash: e1251ed182c9b20dd6ecc7c84742951a38075274
       body: ''
