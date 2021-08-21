@@ -32,6 +32,11 @@ syncIntegrationScenario.run(
 		source: 'discourse',
 		options: {
 			token: TOKEN,
+			head: {
+				ignore: {
+					'support-thread': ['data.lastMessage'],
+				},
+			},
 		},
 		isAuthorized: (self: any, request: any) => {
 			return (
