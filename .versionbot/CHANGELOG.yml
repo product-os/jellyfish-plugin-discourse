@@ -1,4 +1,37 @@
 - commits:
+    - subject: Bump jellyfish-test-harness to v6.1.0
+      hash: e1251ed182c9b20dd6ecc7c84742951a38075274
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Bump jellyfish-core to v5.1.20
+      hash: ac7128d8a6868e7d82e15bab40bddff9778aa5c2
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Bump action-library and jellyfish-types
+      hash: 9e504470521d1ef0606270e029fe7d7f31700fbf
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.1.4
+  date: 2021-08-21T16:01:36.241Z
+- commits:
     - subject: 'patch: Update external-non-major'
       hash: 1054827a8ffd39147fb56847b1fe47b8fa25a462
       body: ''
