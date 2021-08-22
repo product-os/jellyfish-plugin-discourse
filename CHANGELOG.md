@@ -4,6 +4,12 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.13 - 2021-08-22
+
+* Add compose up command, more test docs [Josh Bowling]
+* Update test command in README [Josh Bowling]
+* use balena convention for npm script names [Martin Rauscher]
+
 ## 1.1.12 - 2021-08-21
 
 * patch: Update dependency @balena/jellyfish-core to ^5.1.20 [Renovate Bot]
