@@ -1,4 +1,25 @@
 - commits:
+    - subject: Update files to use secrets
+      hash: e6471f1e50f8ebdf3beec31e704501547580d78a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: 62bc2aa12394883d3adebd0f8e7f3e33f553661b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.1.20
+  date: 2021-08-31T10:23:49.192Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-core to ^5.2.0'
       hash: 42bfac2263fa0c5efe54fba76bed27125788607e
       body: |
