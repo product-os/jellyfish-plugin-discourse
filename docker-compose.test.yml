@@ -5,11 +5,10 @@ version: '2.1'
 
 services:
   sut:
+    image: balena/jellyfish-plugin-discourse_sut:latest
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        NPM_TOKEN: $NPM_TOKEN
     depends_on:
       - postgres
       - redis
@@ -30,5 +29,17 @@ services:
       - NPM_TOKEN
     env_file:
       - test.env
+    secrets:
+      - integration_discourse_signature_key
+      - integration_discourse_token
+      - integration_discourse_username
     networks:
       - internal
+
+secrets:
+  integration_discourse_signature_key:
+    file: ./.balena/secrets/integration_discourse_signature_key.txt
+  integration_discourse_token:
+    file: ./.balena/secrets/integration_discourse_token.txt
+  integration_discourse_username:
+    file: ./.balena/secrets/integration_discourse_username.txt
