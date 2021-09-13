@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: ea767f87558ca2a21dc103541da7be351f6d0f5d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.32
+  date: 2021-09-13T11:54:59.897Z
+- commits:
     - subject: Fix failing translate tests
       hash: ba3af1936aeab2b7adb27e7090971ebef2914cf9
       body: ''
