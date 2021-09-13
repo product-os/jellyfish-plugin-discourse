@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix failing translate tests
+      hash: ba3af1936aeab2b7adb27e7090971ebef2914cf9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+        signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+      author: Lucian Buzzo
+      nested: []
+  version: 1.1.31
+  date: 2021-09-13T09:54:41.272Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.239'
       hash: bb3f145634a70da7443fe1e03fb8a223ab63346c
       body: ''
