@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-core to v6'
+      hash: 80d77bb5b6fb150761d9214795a448a480efc636
+      body: |
+        Update @balena/jellyfish-core from 5.7.1 to 6.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.35
+  date: 2021-09-13T20:21:19.684Z
+- commits:
     - subject: Add integration tests for mirror functionality
       hash: f0722cace8820ea1610896d8b28d58f5d477056c
       body: >
