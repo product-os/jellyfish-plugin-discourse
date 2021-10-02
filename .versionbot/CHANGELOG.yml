@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: 56ddd9bf9116879621727f993a1cfc8495443c5b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.50
+  date: 2021-10-02T18:06:58.961Z
+- commits:
     - subject: Ignore decrypted mailgun and meet secrets
       hash: f693fbc0adee0ca1ec23e967bc3283052eea943a
       body: ''

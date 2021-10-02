@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.50 - 2021-10-02
+
+* patch: Update external-non-major [Renovate Bot]
+
 ## 1.1.49 - 2021-09-26
 
 * Ignore decrypted mailgun and meet secrets [Josh Bowling]
