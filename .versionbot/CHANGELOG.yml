@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: cf6b2b32c7f95300059e8fb144c60abf719fb6c8
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.53
+  date: 2021-10-05T08:57:57.877Z
+- commits:
     - subject: 'Update test:compose to match image name'
       hash: 95f4a5fe670af407c55f54c316b5085714003cbc
       body: ''

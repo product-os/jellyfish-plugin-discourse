@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.53 - 2021-10-05
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.1.52 - 2021-10-05
 
 * Update test:compose to match image name [Josh Bowling]
