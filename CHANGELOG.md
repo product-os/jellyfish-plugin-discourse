@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.52 - 2021-10-05
+
+* Update test:compose to match image name [Josh Bowling]
+* 🔄 Synced file(s) with product-os/jellyfish-config [joshbwlng]
+
 ## 1.1.51 - 2021-10-03
 
 * patch: Update dependency @balena/jellyfish-config to ^1.5.1 [Renovate Bot]
