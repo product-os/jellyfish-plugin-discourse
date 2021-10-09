@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.55 - 2021-10-09
+
+* patch: Update external-non-major [Renovate Bot]
+
 ## 1.1.54 - 2021-10-05
 
 * patch: Update dependency @balena/jellyfish-core to ^6.2.0 [Renovate Bot]
