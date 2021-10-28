@@ -1,4 +1,17 @@
 - commits:
+    - subject: Use named variables for exports
+      hash: ec2d604c43cce47fb6ad5851314d8a60e0399969
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.1.67
+  date: 2021-10-28T02:02:37.073Z
+- commits:
     - subject: "\U0001F504 Synced file(s) with product-os/jellyfish-config"
       hash: dec8c39ceb6877340610f48f741c1141fc47c9f0
       body: ''

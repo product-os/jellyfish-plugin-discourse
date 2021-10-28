@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.67 - 2021-10-28
+
+* Use named variables for exports [Josh Bowling]
+
 ## 1.1.66 - 2021-10-24
 
 * 🔄 Synced file(s) with product-os/jellyfish-config [joshbwlng]
