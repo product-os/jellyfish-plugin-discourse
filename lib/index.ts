@@ -5,8 +5,8 @@
  */
 
 import { JellyfishPluginBase } from '@balena/jellyfish-plugin-base';
-import actions from './actions';
-import cards from './cards';
+import { actions } from './actions';
+import { cards } from './cards';
 import integrations from './integrations';
 
 /**
