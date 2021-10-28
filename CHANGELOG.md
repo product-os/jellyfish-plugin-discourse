@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.68 - 2021-10-28
+
+* patch: Update dependency @balena/jellycheck to ^0.1.4 [Renovate Bot]
+
 ## 1.1.67 - 2021-10-28
 
 * Use named variables for exports [Josh Bowling]

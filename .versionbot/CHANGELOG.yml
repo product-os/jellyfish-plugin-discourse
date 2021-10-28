@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellycheck to ^0.1.4'
+      hash: 72a62357e9dde9ed4937e138e8892b4bce313f25
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.68
+  date: 2021-10-28T02:36:17.774Z
+- commits:
     - subject: Use named variables for exports
       hash: ec2d604c43cce47fb6ad5851314d8a60e0399969
       body: ''
