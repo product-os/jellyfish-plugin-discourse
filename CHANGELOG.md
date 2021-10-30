@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.71 - 2021-10-30
+
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.1.70 - 2021-10-30
 
 * patch: Update external-non-major [Renovate Bot]
