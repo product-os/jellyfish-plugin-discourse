@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.72 - 2021-11-05
+
+* patch: Update dependency @balena/jellyfish-core to v8 [Renovate Bot]
+
 ## 1.1.71 - 2021-10-30
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
