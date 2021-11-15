@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency lint-staged to v12'
+      hash: d8876610c01443c2168db577a2e77da903f153a2
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.83
+  date: 2021-11-15T14:55:08.284Z
+- commits:
     - subject: 'patch: Update dependency typedoc to ^0.22.9'
       hash: a67da94461246dcdd155c7fb983b0116b62ac61c
       body: ''
