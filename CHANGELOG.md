@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.84 - 2021-11-17
+
+* Set license [Josh Bowling]
+
 ## 1.1.83 - 2021-11-15
 
 * patch: Update dependency lint-staged to v12 [Renovate Bot]
