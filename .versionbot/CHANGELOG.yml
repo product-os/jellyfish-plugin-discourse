@@ -1,4 +1,34 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-core to ^8.1.0'
+      hash: fd7fd925071710aca5bcb4326740bd467670213f
+      body: |
+        Update @balena/jellyfish-core from 8.0.0 to 8.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: 'Update compose, remove old secrets'
+      hash: 2361903b5e4e6edf71e20c17099f73e5294f16c8
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: 80890e336388b89df4f46746f0b73f98110e167d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.1.86
+  date: 2021-11-19T20:46:08.516Z
+- commits:
     - subject: 'patch: Update internal-patch'
       hash: 0f4399cc43aa7416faea9adc1e27b2f2dfc051b0
       body: ''
