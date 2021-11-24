@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.93 - 2021-11-24
+
+* 🔄 Synced file(s) with product-os/jellyfish-config [joshbwlng]
+
 ## 1.1.92 - 2021-11-24
 
 * patch: Update internal-patch [Renovate Bot]
