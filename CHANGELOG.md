@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.96 - 2021-11-26
+
+* Use product-os/renovate-config [Josh Bowling]
+
 ## 1.1.95 - 2021-11-25
 
 * patch: Update dependency @balena/jellyfish-plugin-product-os to ^2.8.0 [Renovate Bot]
