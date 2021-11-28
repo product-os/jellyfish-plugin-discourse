@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.101 - 2021-11-28
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.1.100 - 2021-11-28
 
 * Remove old sync comments [Josh Bowling]
