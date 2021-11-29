@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-assert to ^1.1.99'
+      hash: 1291fc8ce64ce6a171830f3253b681c9e2d7e362
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.103
+  date: 2021-11-29T13:22:06.010Z
+- commits:
     - subject: 'patch: Update external-non-major Docker tags'
       hash: 4f17171be41e52c7113f4bd84c7f6988b7099881
       body: ''
