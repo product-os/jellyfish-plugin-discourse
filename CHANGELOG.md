@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.105 - 2021-12-01
+
+* Remove old secrets from gitignore [Josh Bowling]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.1.104 - 2021-12-01
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
