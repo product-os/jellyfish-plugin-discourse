@@ -46,8 +46,8 @@
   "author": "Balena.io. <hello@balena.io>",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@balena/jellyfish-assert": "^1.1.99",
-    "@balena/jellyfish-plugin-base": "^2.1.310",
+    "@balena/jellyfish-assert": "^1.1.100",
+    "@balena/jellyfish-plugin-base": "^2.1.317",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
