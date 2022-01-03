@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-plugin-default to ^21.2.6'
+      hash: 265cbbef7d6b491589b696c0900f89ed60bf3817
+      body: |
+        Update @balena/jellyfish-plugin-default from 21.1.147 to 21.2.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.125
+  date: 2022-01-03T05:22:05.847Z
+- commits:
     - subject: Remove peer deps
       hash: 2fb50f526c3319b500a7a05f19575bcf3311df52
       body: ''
