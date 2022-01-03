@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.124 - 2022-01-03
+
+* Remove peer deps [Josh Bowling]
+* patch: Update dependency @balena/jellyfish-core to v11 [Renovate Bot]
+
 ## 1.1.123 - 2022-01-03
 
 * patch: Update internal-patch [Renovate Bot]
