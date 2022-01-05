@@ -1,15 +1,16 @@
+import { ActionLibrary } from '@balena/jellyfish-action-library';
+import { defaultEnvironment as environment } from '@balena/jellyfish-environment';
+import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
+import { ProductOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { integrationHelpers } from '@balena/jellyfish-test-harness';
-import * as _ from 'lodash';
+import { Contract } from '@balena/jellyfish-types/build/core';
+import { strict as assert } from 'assert';
 import Bluebird from 'bluebird';
+import * as _ from 'lodash';
 import request from 'request';
 import { v4 as uuid } from 'uuid';
-import { strict as assert } from 'assert';
-import { defaultEnvironment as environment } from '@balena/jellyfish-environment';
-import { Contract } from '@balena/jellyfish-types/build/core';
-import { ProductOsPlugin } from '@balena/jellyfish-plugin-product-os';
-import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
-import ActionLibrary = require('@balena/jellyfish-action-library');
 import { DiscoursePlugin } from '../../../lib';
+
 const TOKEN = environment.integration.discourse;
 
 let ctx: integrationHelpers.IntegrationTestContext;
