@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.128 - 2022-01-05
+
+* Update action-library imports [Josh Bowling]
+* patch: Update dependency @balena/jellyfish-action-library to v16 [Renovate Bot]
+
 ## 1.1.127 - 2022-01-04
 
 * patch: Update internal-patch [Renovate Bot]
