@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-action-library to ^16.2.0'
+      hash: 717b2f59ab04171f954a1540d74c4c65a5f284af
+      body: |
+        Update @balena/jellyfish-action-library from 16.1.11 to 16.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.132
+  date: 2022-01-13T01:08:37.393Z
+- commits:
     - subject: "\U0001F504 Synced file(s) with product-os/secrets"
       hash: 33ad0a9666ee227e6863441e49667da1350bfddb
       body: ''
