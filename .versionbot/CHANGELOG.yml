@@ -1,4 +1,15 @@
 - commits:
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: 33ad0a9666ee227e6863441e49667da1350bfddb
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.1.131
+  date: 2022-01-13T00:31:03.936Z
+- commits:
     - subject: 'patch: Update external-non-major'
       hash: fae83511e7ba8159593b8609815dc496841ecd6a
       body: ''
