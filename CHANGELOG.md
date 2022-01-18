@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.134 - 2022-01-18
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.1.133 - 2022-01-18
 
 * patch: Update external-non-major Docker tags [Renovate Bot]
