@@ -1,2 +1,6 @@
-// tslint:disable-next-line: no-var-requires
-export default [require('./discourse')];
+import type { IntegrationDefinition, Map } from '@balena/jellyfish-worker';
+import { discourseIntegrationDefinition } from './discourse';
+
+export const integrations: Map<IntegrationDefinition> = {
+	discourse: discourseIntegrationDefinition,
+};

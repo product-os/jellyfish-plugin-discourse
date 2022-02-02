@@ -1,5 +1,12 @@
 import * as assert from '@balena/jellyfish-assert';
-import { Integration } from '@balena/jellyfish-plugin-base';
+import type { Contract } from '@balena/jellyfish-types/build/core';
+import {
+	Integration,
+	IntegrationDefinition,
+	SequenceItem,
+	syncErrors,
+} from '@balena/jellyfish-worker';
+import type { Method } from 'axios';
 import Bluebird from 'bluebird';
 import crypto from 'crypto';
 import _ from 'lodash';
@@ -22,7 +29,7 @@ const SLUG = 'discourse';
 async function httpDiscourse(
 	context: any,
 	integrationOptions: any,
-	method: string,
+	method: Method,
 	url: string,
 	options: any,
 	retries = 15,
@@ -32,14 +39,11 @@ async function httpDiscourse(
 	context.log.info('Discourse API request', {
 		// For easy grouping purposes
 		slug: `${username}-${method}-${url}`,
-
 		method,
 		url,
 		username,
 		options,
 	});
-
-	const qs = options.query || {};
 
 	const headers = Object.assign({}, options.headers || {}, {
 		'Api-Key': integrationOptions.token.api,
@@ -49,25 +53,20 @@ async function httpDiscourse(
 	const result = await context.request(options.actor, {
 		method,
 		baseUrl: options.baseUrl,
-		body: options.body,
-		useQuerystring: true,
-		json: true,
 		uri: url,
-		qs,
+		data: options.body || options.query,
+		useQuerystring: options.useQuerystring || false,
 		headers,
 	});
 
 	if (result.code === 429) {
-		assert.INTERNAL(
-			null,
-			retries > 0,
-			integrationOptions.errors.SyncRateLimit,
-			() => {
-				return `Rate limit hit ${
-					result.code
-				} ${method} ${url}: ${JSON.stringify(result.body, null, 2)}`;
-			},
-		);
+		assert.INTERNAL(null, retries > 0, syncErrors.SyncRateLimit, () => {
+			return `Rate limit hit ${result.code} ${method} ${url}: ${JSON.stringify(
+				result.body,
+				null,
+				2,
+			)}`;
+		});
 
 		const seconds = result.body.extras.wait_seconds || 5;
 		context.log.warn('Discourse rate limit retry', {
@@ -75,7 +74,9 @@ async function httpDiscourse(
 			seconds,
 		});
 
-		await Bluebird.delay(seconds * 1000);
+		await new Promise((resolve) => {
+			setTimeout(resolve, seconds * 1000);
+		});
 		return httpDiscourse(
 			context,
 			integrationOptions,
@@ -89,16 +90,11 @@ async function httpDiscourse(
 	// Discourse may be unavailable, so at least try a couple
 	// of times before giving up.
 	if (result.code >= 500) {
-		assert.USER(
-			null,
-			retries > 0,
-			integrationOptions.errors.SyncExternalRequestError,
-			() => {
-				return `Discourse unavailable ${
-					result.code
-				} ${method} ${url}: ${JSON.stringify(result.body, null, 2)}`;
-			},
-		);
+		assert.USER(null, retries > 0, syncErrors.SyncExternalRequestError, () => {
+			return `Discourse unavailable ${
+				result.code
+			} ${method} ${url}: ${JSON.stringify(result.body, null, 2)}`;
+		});
 
 		context.log.warn('Discourse unavailable retry', {
 			retries,
@@ -119,16 +115,11 @@ async function httpDiscourse(
 	// 403 "Request forbidden by administrative rules"
 	// but it works fine again after a little while
 	if (result.code === 403) {
-		assert.USER(
-			null,
-			retries > 0,
-			integrationOptions.errors.SyncExternalRequestError,
-			() => {
-				return `Discourse permission error ${
-					result.code
-				} ${method} ${url}: ${JSON.stringify(result.body, null, 2)}`;
-			},
-		);
+		assert.USER(null, retries > 0, syncErrors.SyncExternalRequestError, () => {
+			return `Discourse permission error ${
+				result.code
+			} ${method} ${url}: ${JSON.stringify(result.body, null, 2)}`;
+		});
 
 		context.log.warn('Discourse permission error retry', {
 			retries,
@@ -167,13 +158,14 @@ async function getCategoryNameById(
 		{
 			baseUrl,
 			actor,
+			useQuerystring: true,
 		},
 	);
 
 	assert.INTERNAL(
 		null,
 		result.code === 200,
-		options.errors.SyncExternalRequestError,
+		syncErrors.SyncExternalRequestError,
 		() => {
 			return `Couldn't get categories: ${JSON.stringify(result, null, 2)}`;
 		},
@@ -197,6 +189,7 @@ async function getDiscourseResource(
 		baseUrl,
 		actor,
 		query: options.query,
+		useQuerystring: true,
 	});
 
 	if (result.code === 404) {
@@ -206,7 +199,7 @@ async function getDiscourseResource(
 	assert.INTERNAL(
 		null,
 		result.code === 200,
-		options.errors.SyncExternalRequestError,
+		syncErrors.SyncExternalRequestError,
 		() => {
 			return `Couldn't get resource ${path}: ${JSON.stringify(
 				result,
@@ -649,7 +642,7 @@ async function getActor(
 
 	const username = _.get(payload, ['post', 'username']);
 
-	assert.INTERNAL(null, userId || username, options.errors.SyncNoActor, () => {
+	assert.INTERNAL(null, userId || username, syncErrors.SyncNoActor, () => {
 		return `No user id in payload: ${JSON.stringify(payload, null, 2)}`;
 	});
 
@@ -702,7 +695,7 @@ async function getActor(
 	assert.INTERNAL(
 		null,
 		remoteUser,
-		options.errors.SyncNoActor,
+		syncErrors.SyncNoActor,
 		`No such user: ${userId}`,
 	);
 
@@ -735,7 +728,7 @@ async function getRemoteTopicData(
 	assert.INTERNAL(
 		null,
 		data,
-		options.errors.SyncNoExternalResource,
+		syncErrors.SyncNoExternalResource,
 		`The topic ${topicId} does not exist`,
 	);
 
@@ -864,19 +857,20 @@ async function getTopicFromPostUrl(
 		`${url}.json`,
 		{
 			actor,
+			useQuerystring: true,
 		},
 	);
 
 	assert.INTERNAL(
 		null,
 		topicResponse.code !== 404,
-		options.errors.SyncNoExternalResource,
+		syncErrors.SyncNoExternalResource,
 		`Could not find topic from ${url}`,
 	);
 	assert.INTERNAL(
 		null,
 		topicResponse.code === 200,
-		options.errors.SyncExternalRequestError,
+		syncErrors.SyncExternalRequestError,
 		() => {
 			return `Could not get topic from ${url}: ${JSON.stringify(
 				topicResponse,
@@ -946,11 +940,13 @@ async function getPostData(
 	return postData;
 }
 
-module.exports = class DiscourseIntegration implements Integration {
+export class DiscourseIntegration implements Integration {
 	public slug = SLUG;
+	public baseUrl: string;
+
+	// TS-TODO: Use proper types
 	public context: any;
 	public options: any;
-	public baseUrl: string;
 
 	constructor(options: any) {
 		this.options = options;
@@ -958,15 +954,14 @@ module.exports = class DiscourseIntegration implements Integration {
 		this.baseUrl = 'https://forums.balena.io';
 	}
 
-	async initialize() {
+	public async destroy() {
 		return Bluebird.resolve();
 	}
 
-	async destroy() {
-		return Bluebird.resolve();
-	}
-
-	async mirror(card: any, options: any): Promise<any> {
+	public async mirror(
+		card: Contract,
+		options: { actor: string },
+	): Promise<SequenceItem[]> {
 		if (
 			!this.options.token ||
 			!this.options.token.username ||
@@ -984,7 +979,8 @@ module.exports = class DiscourseIntegration implements Integration {
 			actor.slug.replace(/^user-/g, ''),
 		);
 
-		const discourseUrl = _.find(card.data.mirrors, (mirror) => {
+		// TS-TODO: Stop casting
+		const discourseUrl = _.find(card.data.mirrors as string[], (mirror) => {
 			return _.startsWith(mirror, this.baseUrl);
 		});
 
@@ -1003,13 +999,14 @@ module.exports = class DiscourseIntegration implements Integration {
 				`${discourseUrl}.json`,
 				{
 					actor: options.actor,
+					useQuerystring: true,
 				},
 			);
 
 			assert.INTERNAL(
 				null,
 				remoteTopic.code === 200,
-				this.options.errors.SyncExternalRequestError,
+				syncErrors.SyncExternalRequestError,
 				() => {
 					return [
 						`Could not fetch Discourse topic: ${discourseUrl},`,
@@ -1022,7 +1019,7 @@ module.exports = class DiscourseIntegration implements Integration {
 				remoteTopic.body.title !== card.name ||
 				!_.isEqual(remoteTopic.body.tags, card.data.tags || [])
 			) {
-				const body = {
+				const body: any = {
 					title: card.name,
 				};
 
@@ -1031,11 +1028,10 @@ module.exports = class DiscourseIntegration implements Integration {
 					return [];
 				}
 
-				const query = {};
 				if (_.isEmpty(card.data.tags)) {
-					query['tags[]'] = '[]';
+					body.tags = [];
 				} else {
-					query['tags[]'] = card.data.tags;
+					body.tags = card.data.tags;
 				}
 
 				const topicId = _.last(discourseUrl.split('/'));
@@ -1048,14 +1044,13 @@ module.exports = class DiscourseIntegration implements Integration {
 						username,
 						actor: options.actor,
 						body,
-						query,
 					},
 				);
 
 				assert.INTERNAL(
 					null,
 					result.code === 200,
-					this.options.errors.SyncExternalRequestError,
+					syncErrors.SyncExternalRequestError,
 					() => {
 						return [
 							`Could not update topic ${discourseUrl} as ${username}`,
@@ -1104,7 +1099,7 @@ module.exports = class DiscourseIntegration implements Integration {
 			assert.USER(
 				null,
 				remoteUser,
-				this.options.errors.SyncNoActor,
+				syncErrors.SyncNoActor,
 				`The user ${username} does not exist in Discourse`,
 			);
 
@@ -1131,13 +1126,14 @@ module.exports = class DiscourseIntegration implements Integration {
 
 			const explanation = `This message was posted as @${messageUsername} because @${username} is not a Discourse moderator`;
 
+			// TS-TODO: Stop casting
+			const message = (card.data.payload as any).message;
 			const messageBody =
-				isAllowed || card.data.payload.message.includes(explanation)
-					? card.data.payload.message
-					: [
-							`(${username}) ${card.data.payload.message}`,
-							`\n\n***\n\n> ${explanation}`,
-					  ].join(' ');
+				isAllowed || message.includes(explanation)
+					? message
+					: [`(${username}) ${message}`, `\n\n***\n\n> ${explanation}`].join(
+							' ',
+					  );
 
 			if (discourseUrl) {
 				const topicFromPostUrl = await getTopicFromPostUrl(
@@ -1159,7 +1155,7 @@ module.exports = class DiscourseIntegration implements Integration {
 				assert.INTERNAL(
 					null,
 					postData,
-					this.options.errors.SyncNoExternalResource,
+					syncErrors.SyncNoExternalResource,
 					`Could not find post ${discourseUrl}`,
 				);
 
@@ -1183,17 +1179,16 @@ module.exports = class DiscourseIntegration implements Integration {
 				);
 
 				if (editResponse.code === 403) {
-					const error = new this.options.errors.SyncPermissionsError(
+					const error = new syncErrors.SyncPermissionsError(
 						"You don't have permissions to update this post on Discourse",
 					);
-					error.expected = true;
 					throw error;
 				}
 
 				assert.INTERNAL(
 					null,
 					editResponse.code === 200,
-					this.options.errors.SyncExternalRequestError,
+					syncErrors.SyncExternalRequestError,
 					() => {
 						return [
 							`Could not update comment ${postData.id}`,
@@ -1213,13 +1208,14 @@ module.exports = class DiscourseIntegration implements Integration {
 				threadDiscourseUrl,
 				{
 					actor: options.actor,
+					useQuerystring: true,
 				},
 			);
 
 			assert.INTERNAL(
 				null,
 				topicResponse.code === 200,
-				this.options.errors.SyncExternalRequestError,
+				syncErrors.SyncExternalRequestError,
 				() => {
 					return [
 						`Could not get topic ${threadDiscourseUrl}:`,
@@ -1258,7 +1254,7 @@ module.exports = class DiscourseIntegration implements Integration {
 			assert.USER(
 				null,
 				response.code !== 422,
-				this.options.errors.SyncInvalidRequest,
+				syncErrors.SyncInvalidRequest,
 				() => {
 					return `Couldn't create post: ${JSON.stringify(response, null, 2)}`;
 				},
@@ -1267,14 +1263,17 @@ module.exports = class DiscourseIntegration implements Integration {
 			assert.INTERNAL(
 				null,
 				response.code === 200,
-				this.options.errors.SyncExternalRequestError,
+				syncErrors.SyncExternalRequestError,
 				() => {
 					return `Could not create post: ${JSON.stringify(response, null, 2)}`;
 				},
 			);
 
 			card.data.mirrors = card.data.mirrors || [];
-			card.data.mirrors.push(getMirrorId(this.baseUrl, response.body));
+			// TS-TODO: Stop casting
+			(card.data.mirrors as string[]).push(
+				getMirrorId(this.baseUrl, response.body),
+			);
 
 			return [
 				{
@@ -1288,7 +1287,10 @@ module.exports = class DiscourseIntegration implements Integration {
 		return [];
 	}
 
-	async translate(event: any, options: any): Promise<any> {
+	async translate(
+		event: Contract,
+		options: { actor: string },
+	): Promise<SequenceItem[]> {
 		if (
 			!this.options.token ||
 			!this.options.token.username ||
@@ -1306,9 +1308,13 @@ module.exports = class DiscourseIntegration implements Integration {
 
 		// The "post_stream" property is huge and adds a lot of noise
 		// to the logs. We can safely remove it here as we never use it.
-		Reflect.deleteProperty(event.data.payload, 'post_stream');
+		// TS-TODO: Stop casting
+		Reflect.deleteProperty(event.data.payload as any, 'post_stream');
 
-		const eventId = _.parseInt(event.data.headers['x-discourse-event-id']);
+		// TS-TODO: Stop casting
+		const eventId = _.parseInt(
+			(event.data as any).headers['x-discourse-event-id'],
+		);
 		const eventActor = await getActor(
 			this.context,
 			options.actor,
@@ -1349,10 +1355,11 @@ module.exports = class DiscourseIntegration implements Integration {
 		});
 
 		if (isTopicEvent(event)) {
+			// TS-TODO: Stop casting
 			await processTopicData(
 				sequence,
 				topicMirrorId,
-				event.data.payload.topic,
+				(event.data.payload as any).topic,
 				{
 					actor: topicActorId,
 					baseUrl: this.baseUrl,
@@ -1365,7 +1372,10 @@ module.exports = class DiscourseIntegration implements Integration {
 					 * claiming in the web hook details that the topic
 					 * is active.
 					 */
-					active: event.data.headers['x-discourse-event'] !== 'topic_destroyed',
+					// TS-TODO: Stop casting
+					active:
+						(event.data as any).headers['x-discourse-event'] !==
+						'topic_destroyed',
 
 					eventId,
 				},
@@ -1373,7 +1383,8 @@ module.exports = class DiscourseIntegration implements Integration {
 		}
 
 		if (isPostEvent(event)) {
-			event.data.payload.post.current = true;
+			// TS-TODO: Stop casting
+			(event.data.payload as any).post.current = true;
 		}
 
 		const newThreadCard = await processTopicData(
@@ -1394,8 +1405,10 @@ module.exports = class DiscourseIntegration implements Integration {
 					remoteTopicData.post_stream.posts,
 					async (post: any) => {
 						post.destroyed = Boolean(post.deleted_at);
+						// TS-TODO: Stop casting
 						post.current =
-							isPostEvent(event) && post.id === event.data.payload.post.id;
+							isPostEvent(event) &&
+							post.id === (event.data.payload as any).post.id;
 
 						const postActor = await getActor(
 							this.context,
@@ -1419,39 +1432,45 @@ module.exports = class DiscourseIntegration implements Integration {
 			  )
 			: [];
 		if (isPostEvent(event)) {
+			// TS-TODO: Stop casting
 			const apiPost = _.find(posts, {
-				id: event.data.payload.post.id,
+				id: (event.data.payload as any).post.id,
 			});
 
 			// If webhook post is not known by the API then we assume
 			// its a post we previously deleted
+			// TS-TODO: Stop casting
 			const isDestroyedEvent =
-				event.data.headers['x-discourse-event'] === 'post_destroyed';
+				(event.data as any).headers['x-discourse-event'] === 'post_destroyed';
 
+			// TS-TODO: Stop casting
 			const postResponse = await httpDiscourse(
 				this.context,
 				this.options,
 				'GET',
-				`/posts/${event.data.payload.post.id}.json`,
+				`/posts/${(event.data as any).payload.post.id}.json`,
 				{
 					baseUrl: this.baseUrl,
 					actor: options.actor,
+					useQuerystring: true,
 				},
 			);
 
+			// TS-TODO: Stop casting
 			assert.INTERNAL(
 				null,
 				postResponse.code !== 404,
-				this.options.errors.SyncNoExternalResource,
-				`The post ${event.data.payload.post.id} does not exist`,
+				syncErrors.SyncNoExternalResource,
+				`The post ${(event.data.payload as any).post.id} does not exist`,
 			);
 			assert.INTERNAL(
 				null,
 				postResponse.code === 200,
-				this.options.errors.SyncExternalRequestError,
+				syncErrors.SyncExternalRequestError,
 				() => {
+					// TS-TODO: Stop casting
 					return [
-						`Could not get post ${event.data.payload.post.id}:`,
+						`Could not get post ${(event.data.payload as any).post.id}:`,
 						JSON.stringify(postResponse, null, 2),
 					].join(' ');
 				},
@@ -1460,12 +1479,15 @@ module.exports = class DiscourseIntegration implements Integration {
 			// Webhook events do not contain the raw post data, so we extract it from
 			// the direct API query.
 			// See https://meta.discourse.org/t/setting-up-webhooks/49045/55?u=lucianbuzzo
-			event.data.payload.post.raw = postResponse.body.raw;
+			// TS-TODO: Stop casting
+			(event.data.payload as any).post.raw = postResponse.body.raw;
 
 			if (isDestroyedEvent) {
-				event.data.payload.post.destroyed = true;
+				// TS-TODO: Stop casting
+				(event.data.payload as any).post.destroyed = true;
 			} else if (apiPost) {
-				event.data.payload.post.destroyed = false;
+				// TS-TODO: Stop casting
+				(event.data.payload as any).post.destroyed = false;
 			} else {
 				/*
 				 * We've seen cases where posts that were just created
@@ -1474,28 +1496,32 @@ module.exports = class DiscourseIntegration implements Integration {
 				 * once more against the posts API before marking
 				 * a post as deleted.
 				 */
-				event.data.payload.post.destroyed = Boolean(
+				// TS-TODO: Stop casting
+				(event.data.payload as any).post.destroyed = Boolean(
 					postResponse.body.deleted_at,
 				);
 			}
 
-			event.data.payload.post.actorId = eventActorId;
+			// TS-TODO: Stop casting
+			(event.data.payload as any).post.actorId = eventActorId;
 
 			if (!apiPost) {
-				posts.push(event.data.payload.post);
+				// TS-TODO: Stop casting
+				posts.push((event.data.payload as any).post);
 			}
-
 			// Only if necessary
+			// TS-TODO: Stop casting
 			if (
 				apiPost &&
-				normalizeMessage(event.data.payload.post.raw, baseUrl) !==
+				normalizeMessage((event.data.payload as any).post.raw, baseUrl) !==
 					normalizeMessage(apiPost.raw, baseUrl)
 			) {
+				// TS-TODO: Stop casting
 				if (
-					new Date(event.data.payload.post.updated_at) >
+					new Date((event.data.payload as any).post.updated_at) >
 					new Date(apiPost.updated_at)
 				) {
-					posts.push(event.data.payload.post);
+					posts.push((event.data.payload as any).post);
 				}
 			}
 		}
@@ -1544,24 +1570,25 @@ module.exports = class DiscourseIntegration implements Integration {
 
 		return sequence;
 	}
-};
+}
 
-module.exports.slug = 'discourse';
+export const discourseIntegrationDefinition: IntegrationDefinition = {
+	initialize: async (options) => new DiscourseIntegration(options),
+	isEventValid: (_logContext, token, rawEvent, headers) => {
+		const signature = headers['x-discourse-event-signature'];
+		if (!signature) {
+			return true;
+		}
 
-module.exports.isEventValid = (token: any, rawEvent: any, headers: any) => {
-	const signature = headers['x-discourse-event-signature'];
-	if (!signature) {
-		return true;
-	}
+		if (!token || !token.signature) {
+			return false;
+		}
 
-	if (!token || !token.signature) {
-		return false;
-	}
+		const hash = crypto
+			.createHmac('sha256', token.signature)
+			.update(rawEvent)
+			.digest('hex');
 
-	const hash = crypto
-		.createHmac('sha256', token.signature)
-		.update(rawEvent)
-		.digest('hex');
-
-	return `sha256=${hash}` === signature;
+		return `sha256=${hash}` === signature;
+	},
 };

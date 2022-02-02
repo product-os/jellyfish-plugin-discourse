@@ -1,33 +1,24 @@
-import { cardMixins } from '@balena/jellyfish-core';
-import { DiscoursePlugin } from '../../lib';
+import { defaultPlugin } from '@balena/jellyfish-plugin-default';
+import { PluginManager } from '@balena/jellyfish-worker';
+import { discoursePlugin } from '../../lib';
 
-const context = {
-	id: 'jellyfish-plugin-discourse-test',
-};
-
-const plugin = new DiscoursePlugin();
+const pluginManager = new PluginManager([defaultPlugin(), discoursePlugin()]);
 
 test('Expected cards are loaded', () => {
-	const cards = plugin.getCards(context, cardMixins);
-
-	// Sanity check
+	const contracts = pluginManager.getCards();
 	expect(
-		cards['triggered-action-integration-discourse-mirror-event'].name,
+		contracts['triggered-action-integration-discourse-mirror-event'].name,
 	).toEqual('Triggered action for Discourse mirrors');
 });
 
 test('Expected integrations are loaded', () => {
-	const integrations = plugin.getSyncIntegrations(context);
-
-	// Sanity check
-	expect(integrations.discourse.slug).toEqual('discourse');
+	const integrations = pluginManager.getSyncIntegrations();
+	expect(Object.keys(integrations).includes('discourse')).toBeTruthy();
 });
 
 test('Expected actions are loaded', () => {
-	const actions = plugin.getActions(context);
-
-	// Sanity check
+	const actions = pluginManager.getActions();
 	expect(
 		Object.keys(actions).includes('action-integration-discourse-mirror-event'),
-	);
+	).toBeTruthy();
 });
