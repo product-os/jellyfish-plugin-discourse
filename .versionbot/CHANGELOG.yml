@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena/balena-redis Docker tag to v0.0.4
+      hash: 864d71f81e00adce4b8ce09b32afc2d0398a5855
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.1.142
+  title: Update balena/balena-redis Docker tag to v0.0.4
+  date: 2022-02-02T07:59:34.540Z
+- commits:
     - subject: Update dependencies (external major bumps)
       hash: fdb9ea3530326510c13c2b39f2e987786c35a2aa
       body: ""

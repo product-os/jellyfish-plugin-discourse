@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 1.1.142 - 2022-02-02
+
+* Update balena/balena-redis Docker tag to v0.0.4 [Renovate Bot]
+
 ## 1.1.141 - 2022-02-02
 
 * Update dependencies (external major bumps) [Renovate Bot]
