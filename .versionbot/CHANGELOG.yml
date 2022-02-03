@@ -1,4 +1,16 @@
 - commits:
+    - subject: 🔄 Synced file(s) with product-os/secrets
+      hash: 7722b8c858282d6b713957875cf311d61bd77aa5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.1.144
+  title: 🔄 Synced file(s) with product-os/secrets
+  date: 2022-02-03T00:08:52.520Z
+- commits:
     - subject: Update resinci/jellyfish-test Docker tag to v1.4.22
       hash: cf789c65cff07b155d1d5a3d4724c3522b56e9b7
       body: ""
