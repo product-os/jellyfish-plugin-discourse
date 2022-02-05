@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.6 - 2022-02-05
+
+* Set LOGLEVEL=error for sut [Josh Bowling]
+
 ## 2.0.5 - 2022-02-05
 
 * Update internal-patch [Renovate Bot]
