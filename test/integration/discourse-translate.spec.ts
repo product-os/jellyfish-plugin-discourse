@@ -26,6 +26,7 @@ afterEach(async () => {
 });
 
 afterAll(() => {
+	workerTestUtils.translateAfterAll();
 	return workerTestUtils.destroyContext(ctx);
 });
 
