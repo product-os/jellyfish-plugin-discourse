@@ -48,7 +48,7 @@
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.12",
     "@balena/jellyfish-core": "^14.2.2",
-    "@balena/jellyfish-worker": "^18.4.7",
+    "@balena/jellyfish-worker": "^18.5.0",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
