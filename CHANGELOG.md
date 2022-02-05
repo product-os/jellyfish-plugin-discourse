@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.3 - 2022-02-05
+
+* Update external-non-major [Renovate Bot]
+
 ## 2.0.2 - 2022-02-05
 
 * Optimize postgres for test performance [Josh Bowling]
