@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update dependencies (internal patch bumps)
+      hash: 388738f3aaaa3baa050a5f89369f2107f85d40b1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.7
+  title: "'Update dependencies (internal patch bumps)'"
+  date: 2022-02-05T16:13:44.766Z
+- commits:
     - subject: Set LOGLEVEL=error for sut
       hash: 104c1919bb49561810ba81e5342c90c77ef03afd
       body: ""
