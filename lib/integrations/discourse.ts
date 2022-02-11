@@ -3,6 +3,7 @@ import type { Contract } from '@balena/jellyfish-types/build/core';
 import {
 	Integration,
 	IntegrationDefinition,
+	IntegrationInitializationOptions,
 	SequenceItem,
 	syncErrors,
 } from '@balena/jellyfish-worker';
@@ -27,11 +28,19 @@ const DISCOURSE_USER_EMAIL_CACHE = new LRU(200);
 const SLUG = 'discourse';
 
 async function httpDiscourse(
-	context: any,
-	integrationOptions: any,
+	context: IntegrationInitializationOptions['context'],
+	integrationOptions: IntegrationInitializationOptions,
 	method: Method,
 	url: string,
-	options: any,
+	options: {
+		baseUrl?: string;
+		actor: string;
+		useQuerystring?: boolean;
+		query?: any;
+		username?: any;
+		body?: any;
+		headers?: any;
+	},
 	retries = 15,
 ): Promise<any> {
 	const username = options.username || integrationOptions.token.username;
@@ -52,7 +61,7 @@ async function httpDiscourse(
 
 	const result = await context.request(options.actor, {
 		method,
-		baseUrl: options.baseUrl,
+		baseUrl: options.baseUrl || '',
 		uri: url,
 		data: options.body || options.query,
 		useQuerystring: options.useQuerystring || false,
@@ -945,10 +954,10 @@ export class DiscourseIntegration implements Integration {
 	public baseUrl: string;
 
 	// TS-TODO: Use proper types
-	public context: any;
-	public options: any;
+	public context: IntegrationInitializationOptions['context'];
+	public options: IntegrationInitializationOptions;
 
-	constructor(options: any) {
+	constructor(options: IntegrationInitializationOptions) {
 		this.options = options;
 		this.context = this.options.context;
 		this.baseUrl = 'https://forums.balena.io';
@@ -1070,7 +1079,9 @@ export class DiscourseIntegration implements Integration {
 		}
 
 		if (baseType === 'message' || baseType === 'whisper') {
-			const thread = await this.context.getElementById(card.data.target);
+			const thread = await this.context.getElementById(
+				card.data.target as string,
+			);
 			if (
 				!thread ||
 				thread.type.split('@')[0] !== 'support-thread' ||
@@ -1079,9 +1090,12 @@ export class DiscourseIntegration implements Integration {
 				return [];
 			}
 
-			const threadDiscourseUrl = _.find(thread.data.mirrors, (mirror) => {
-				return _.startsWith(mirror, this.baseUrl);
-			});
+			const threadDiscourseUrl = _.find(
+				thread.data.mirrors as string[],
+				(mirror) => {
+					return _.startsWith(mirror, this.baseUrl);
+				},
+			);
 			if (!threadDiscourseUrl) {
 				return [];
 			}
@@ -1556,7 +1570,8 @@ export class DiscourseIntegration implements Integration {
 
 			const patchedCard = _.cloneDeep(eventCard);
 			patchedCard.active = postCard.active;
-			patchedCard.data.payload.message = postCard.data.payload.message;
+			// TS-TODO: Fix this any casting
+			(patchedCard.data.payload as any).message = postCard.data.payload.message;
 
 			if (!_.isEqual(eventCard, patchedCard)) {
 				this.context.log.info('Back sync', patchedCard);
