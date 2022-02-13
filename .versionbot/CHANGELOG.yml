@@ -1,4 +1,24 @@
 - commits:
+    - subject: Update external-non-major
+      hash: d283307c01e75be6c15be5d471b436ac40f14672
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update resinci/jellyfish-test Docker tag to v1.4.25
+      hash: ff884e8b8fb2c944d2c4f9e7f2aac75f300a3d5f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.15
+  title: "'Update external-non-major'"
+  date: 2022-02-13T18:42:39.765Z
+- commits:
     - subject: Update internal-patch
       hash: fcca31a323e2f81272a795d86352389ad6c2187c
       body: ""

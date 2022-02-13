@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.15 - 2022-02-13
+
+* Update external-non-major [Renovate Bot]
+* Update resinci/jellyfish-test Docker tag to v1.4.25 [Renovate Bot]
+
 ## 2.0.14 - 2022-02-11
 
 * Update internal-patch [Renovate Bot]
