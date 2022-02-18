@@ -47,8 +47,8 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.14",
-    "@balena/jellyfish-core": "^14.4.0",
-    "@balena/jellyfish-worker": "^18.6.25",
+    "@balena/jellyfish-core": "^14.4.1",
+    "@balena/jellyfish-worker": "^18.6.27",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
