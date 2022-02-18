@@ -1,4 +1,24 @@
 - commits:
+    - subject: 🔄 Synced file(s) with product-os/secrets
+      hash: 7dbe11033784be8b5c8dd31268cb792c67e4c93b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+    - subject: Update @balena/jellyfish-core from 14.3.8 to 14.4.0
+      hash: 4f64034606a8e76b2f7baa8dff79dc638247c391
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.24
+  title: "'🔄 Synced file(s) with product-os/secrets'"
+  date: 2022-02-18T02:15:44.885Z
+- commits:
     - subject: Update internal-patch
       hash: 23567c6a7a55227590fea9d4f57de498a98aa7ef
       body: ""

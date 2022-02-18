@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.24 - 2022-02-18
+
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+* Update @balena/jellyfish-core from 14.3.8 to 14.4.0 [Renovate Bot]
+
 ## 2.0.23 - 2022-02-17
 
 * Update internal-patch [Renovate Bot]
