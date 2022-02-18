@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.25 - 2022-02-18
+
+* Update balena/open-balena-db from v5.0.2 to v5.0.3 [Renovate Bot]
+
 ## 2.0.24 - 2022-02-18
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
