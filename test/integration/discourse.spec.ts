@@ -1,4 +1,5 @@
 import { testUtils as coreTestUtils } from '@balena/jellyfish-core';
+import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { UserContract } from '@balena/jellyfish-types/build/core';
@@ -11,7 +12,12 @@ let ctx: workerTestUtils.TestContext;
 
 beforeAll(async () => {
 	ctx = await workerTestUtils.newContext({
-		plugins: [productOsPlugin(), defaultPlugin(), discoursePlugin()],
+		plugins: [
+			productOsPlugin(),
+			defaultPlugin(),
+			channelsPlugin(),
+			discoursePlugin(),
+		],
 	});
 
 	// Disable all triggers
