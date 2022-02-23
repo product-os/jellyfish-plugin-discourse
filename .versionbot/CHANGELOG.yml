@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-plugin-default from 23.2.1 to 23.3.1
+      hash: 7764c7de5bb33303d8dc7556b4e5b0c38d07db28
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.29
+  title: "'Update @balena/jellyfish-plugin-default from 23.2.1 to 23.3.1'"
+  date: 2022-02-23T05:29:18.289Z
+- commits:
     - subject: Update internal-patch
       hash: 5e1a85fda0850db8a09d2cf3226bc67b46131720
       body: ""
