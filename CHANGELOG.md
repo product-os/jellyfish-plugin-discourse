@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.31 - 2022-02-24
+
+* Transform serialize-error [Josh Bowling]
+
 ## 2.0.30 - 2022-02-23
 
 * Update @balena/jellyfish-core from 14.4.3 to 15.0.0 [Renovate Bot]
