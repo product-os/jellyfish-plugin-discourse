@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.44 - 2022-03-01
+
+* Remove jest esm transforms [Josh Bowling]
+
 ## 2.0.43 - 2022-03-01
 
 * Update @balena/jellyfish-worker from 18.8.11 to 19.0.0 [Renovate Bot]
