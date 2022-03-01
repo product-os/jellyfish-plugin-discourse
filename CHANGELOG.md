@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.45 - 2022-03-01
+
+* Renovate: Stop ignoring internal patches [Josh Bowling]
+
 ## 2.0.44 - 2022-03-01
 
 * Remove jest esm transforms [Josh Bowling]
