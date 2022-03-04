@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.0.50 - 2022-03-04
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.0.49 - 2022-03-02
 
 * Update internal-patch [Renovate Bot]
