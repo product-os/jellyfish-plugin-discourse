@@ -7,13 +7,13 @@ Provides a sync integration for Discourse.
 Below is an example how to use this library:
 
 ```js
-import { cardMixins } from '@balena/jellyfish-core';
-import { DiscoursePlugin } from '@balena/jellyfish-plugin-discourse';
+import { defaultPlugin } from '@balena/jellyfish-plugin-default';
+import { discoursePlugin } from '@balena/jellyfish-plugin-discourse';
+import { PluginManager } from '@balena/jellyfish-worker';
 
-const plugin = new DiscoursePlugin();
-
-// Load cards from this plugin, can use custom mixins
-const cards = plugin.getCards(context, cardMixins);
+// Load cards from this plugin
+const pluginManager = new PluginManager([defaultPlugin(), discoursePlugin()]);
+const cards = pluginManager.getCards();
 console.dir(cards);
 ```
 
