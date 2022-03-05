@@ -46,7 +46,7 @@
   "author": "Balena.io. <hello@balena.io>",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@balena/jellyfish-assert": "^1.2.16",
+    "@balena/jellyfish-assert": "^1.2.17",
     "@balena/jellyfish-core": "^16.0.2",
     "@balena/jellyfish-worker": "^19.0.8",
     "bluebird": "^3.7.2",
@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@balena/jellyfish-config": "^2.0.2",
-    "@balena/jellyfish-environment": "^9.1.1",
+    "@balena/jellyfish-environment": "^9.1.2",
     "@balena/jellyfish-plugin-default": "^23.3.22",
     "@balena/jellyfish-plugin-product-os": "^4.0.35",
     "@balena/jellyfish-types": "^2.0.4",
