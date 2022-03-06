@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add discussion thread channel
+      hash: 2a2043cadc53c5fd58d3147cabb7b34ea604cfc1
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 2.1.0
+  title: "'Add blog discussion comment channel'"
+  date: 2022-03-06T06:50:51.312Z
+- commits:
     - subject: Update lint-staged from 12.3.4 to 12.3.5
       hash: cde5f10bf55f75981d138f789189eacebce8996a
       body: ""

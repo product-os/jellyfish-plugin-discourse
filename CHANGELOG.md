@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.1.0 - 2022-03-06
+
+* Add discussion thread channel [Josh Bowling]
+
 ## 2.0.58 - 2022-03-06
 
 * Update lint-staged from 12.3.4 to 12.3.5 [Josh Bowling]
