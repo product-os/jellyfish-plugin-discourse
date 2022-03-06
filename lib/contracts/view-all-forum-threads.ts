@@ -58,14 +58,8 @@ export const viewAllForumThreads: ViewContractDefinition = {
 						},
 						data: {
 							type: 'object',
-							required: ['inbox', 'mirrors'],
+							required: ['mirrors'],
 							properties: {
-								inbox: {
-									type: 'string',
-									not: {
-										const: 'Discussions',
-									},
-								},
 								mirrors: {
 									type: 'array',
 									items: {
