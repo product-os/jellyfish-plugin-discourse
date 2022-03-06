@@ -1,8 +1,13 @@
+import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { PluginManager } from '@balena/jellyfish-worker';
 import { discoursePlugin } from '../../lib';
 
-const pluginManager = new PluginManager([defaultPlugin(), discoursePlugin()]);
+const pluginManager = new PluginManager([
+	defaultPlugin(),
+	channelsPlugin(),
+	discoursePlugin(),
+]);
 
 test('Expected cards are loaded', () => {
 	const contracts = pluginManager.getCards();

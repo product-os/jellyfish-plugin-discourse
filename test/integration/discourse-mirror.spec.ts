@@ -1,5 +1,6 @@
 import { testUtils as coreTestUtils } from '@balena/jellyfish-core';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
+import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import {
 	defaultPlugin,
 	testUtils as pluginDefaultTestUtils,
@@ -20,7 +21,12 @@ let session: any = {};
 
 beforeAll(async () => {
 	ctx = await pluginDefaultTestUtils.newContext({
-		plugins: [productOsPlugin(), defaultPlugin(), discoursePlugin()],
+		plugins: [
+			productOsPlugin(),
+			defaultPlugin(),
+			channelsPlugin(),
+			discoursePlugin(),
+		],
 	});
 
 	// Standard user
