@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.0 - 2022-03-06
+
+* Add view-all-forum-threads view [Josh Bowling]
+
 ## 2.1.1 - 2022-03-06
 
 * Update internal-patch [Renovate Bot]

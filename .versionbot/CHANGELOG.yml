@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add view-all-forum-threads view
+      hash: da5bd1b1961e96706a6ea03f022811ab32aa696a
+      body: |
+        Moving from plugin-default as this view
+        is specific to discourse forum threads.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 2.2.0
+  title: "'Add view-all-forum-threads view'"
+  date: 2022-03-06T11:26:14.383Z
+- commits:
     - subject: Update internal-patch
       hash: 2313bfce58074c1841cd495714b491f1b5d7d1b7
       body: ""
