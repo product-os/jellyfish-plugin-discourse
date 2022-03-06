@@ -20,7 +20,7 @@ export const discoursePlugin = (): PluginDefinition => {
 		requires: [
 			{
 				slug: 'plugin-default',
-				version: '>=23.x',
+				version: '>=24.x',
 			},
 			{
 				slug: 'plugin-channels',
