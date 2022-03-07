@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.2 - 2022-03-07
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.2.1 - 2022-03-06
 
 * Remove data.inbox from forum view schema [Josh Bowling]

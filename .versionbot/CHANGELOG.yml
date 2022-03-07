@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: aba571559db53d003039ec6858755e0d2412f5e6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.2
+  title: "'Update internal-patch'"
+  date: 2022-03-07T02:30:21.520Z
+- commits:
     - subject: Remove data.inbox from forum view schema
       hash: 7e962125f8f56d3c908b163ba9ed2ace892a5bb9
       body: |
