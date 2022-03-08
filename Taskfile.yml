@@ -10,3 +10,5 @@ tasks:
   test:
     cmds:
       - npm run test:integration
+      - cmd: npm run delete-test-data
+        ignore_error: true
