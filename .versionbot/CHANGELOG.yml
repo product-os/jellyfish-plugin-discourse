@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: 6561c1812777d55eebb4b83f1913ff51d9fd7ddb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.10
+  title: "'Update internal-patch'"
+  date: 2022-03-10T10:45:22.333Z
+- commits:
     - subject: Update axios from 0.26.0 to 0.26.1
       hash: a00a9342cdada9d901e517bb8e1478f055a0fae1
       body: ""

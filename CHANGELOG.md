@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.10 - 2022-03-10
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.2.9 - 2022-03-10
 
 * Update axios from 0.26.0 to 0.26.1 [Renovate Bot]
