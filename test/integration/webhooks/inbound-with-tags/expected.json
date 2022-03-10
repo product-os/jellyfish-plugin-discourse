@@ -19,7 +19,9 @@
         "https://forums.balena.io/t/6085"
       ],
       "mentionsUser": [],
+      "mentionsGroup": [],
       "alertsUser": [],
+      "alertsGroup": [],
       "description": "",
       "status": "open"
     }
