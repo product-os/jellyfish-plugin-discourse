@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use autumndb instead of jellyfish-core
+      hash: 49f6a84beb49f21bf37b471296fa4ae8cf0779c3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+        signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+      author: Lucian Buzzo
+      nested: []
+  version: 2.2.23
+  title: "'Use autumndb instead of jellyfish-core'"
+  date: 2022-03-16T23:34:06.621Z
+- commits:
     - subject: Update internal-patch
       hash: ba0227cf040c85859a2bc4cd3534d597c896057a
       body: ""
