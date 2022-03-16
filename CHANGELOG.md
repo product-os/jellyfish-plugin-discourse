@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.21 - 2022-03-16
+
+* Exclude blog discussions from forum support view [Josh Bowling]
+
 ## 2.2.20 - 2022-03-15
 
 * Bump internal deps [Josh Bowling]

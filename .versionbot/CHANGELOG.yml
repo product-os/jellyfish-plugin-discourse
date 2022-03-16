@@ -1,4 +1,20 @@
 - commits:
+    - subject: Exclude blog discussions from forum support view
+      hash: 07e96b82fbaf693d96181596c74c11709d251315
+      body: |
+        We have a blog discussions channel specifically for
+        these threads and they are not really support.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 2.2.21
+  title: "'Exclude blog discussions from forum support view'"
+  date: 2022-03-16T01:35:17.679Z
+- commits:
     - subject: Bump internal deps
       hash: 07dc314fe40b93b270fc8e0bbb24abdb7c7788bb
       body: ""
