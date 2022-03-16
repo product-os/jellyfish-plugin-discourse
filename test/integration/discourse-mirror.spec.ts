@@ -1,4 +1,4 @@
-import { testUtils as coreTestUtils } from '@balena/jellyfish-core';
+import { testUtils as coreTestUtils } from 'autumndb';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import {
