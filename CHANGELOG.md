@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.24 - 2022-03-16
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.2.23 - 2022-03-16
 
 * Use autumndb instead of jellyfish-core [Lucian Buzzo]
