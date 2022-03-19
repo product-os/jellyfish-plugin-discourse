@@ -48,7 +48,7 @@
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.18",
     "@balena/jellyfish-worker": "^20.2.2",
-    "autumndb": "^17.0.6",
+    "autumndb": "^19.0.0",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
