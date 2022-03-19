@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.31 - 2022-03-19
+
+* Update autumndb from 17.0.6 to 19.0.0 [Renovate Bot]
+
 ## 2.2.30 - 2022-03-19
 
 * Update external-non-major [Renovate Bot]
