@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-worker from 20.0.6 to 20.2.1
+      hash: 718904404c45c4a98ad223df95094d5474818418
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.28
+  title: "'Update @balena/jellyfish-worker from 20.0.6 to 20.2.1'"
+  date: 2022-03-18T15:24:58.166Z
+- commits:
     - subject: Update internal-patch
       hash: 59c5ded311b1bb066b8b2008907a7866c91f4fe8
       body: ""
