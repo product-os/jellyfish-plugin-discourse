@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.37 - 2022-03-23
+
+* Update balena/open-balena-db from v5.0.3 to v5.1.0 [Renovate Bot]
+* Update autumndb from 19.0.4 to 19.1.0 [Renovate Bot]
+
 ## 2.2.36 - 2022-03-22
 
 * Update internal-patch [Renovate Bot]

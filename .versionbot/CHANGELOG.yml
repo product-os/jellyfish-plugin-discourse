@@ -1,4 +1,24 @@
 - commits:
+    - subject: Update balena/open-balena-db from v5.0.3 to v5.1.0
+      hash: f295938f88ebc747776717ab7ff74fb2cd058751
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update autumndb from 19.0.4 to 19.1.0
+      hash: bf479f76c69089f968a5abfe5e6924ab2f542909
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.37
+  title: "'Update balena/open-balena-db from v5.0.3 to v5.1.0'"
+  date: 2022-03-23T02:45:16.525Z
+- commits:
     - subject: Update internal-patch
       hash: 2302fcafa94ce379d2c16c7d2582b3cd47d4bfff
       body: ""
