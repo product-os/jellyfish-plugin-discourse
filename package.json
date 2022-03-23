@@ -47,8 +47,8 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.20",
-    "@balena/jellyfish-worker": "^20.2.7",
-    "autumndb": "^19.1.0",
+    "@balena/jellyfish-worker": "^20.2.9",
+    "autumndb": "^19.1.1",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
