@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: f187302c24046fff42bb5f4d041dc62409663233
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.38
+  title: "'Update internal-patch'"
+  date: 2022-03-23T03:12:18.403Z
+- commits:
     - subject: Update balena/open-balena-db from v5.0.3 to v5.1.0
       hash: f295938f88ebc747776717ab7ff74fb2cd058751
       body: ""
