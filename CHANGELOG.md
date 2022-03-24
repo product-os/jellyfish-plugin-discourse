@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.42 - 2022-03-24
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.2.41 - 2022-03-23
 
 * Update resinci/jellyfish-test from 1.4.27 to 3.0.3 [Josh Bowling]
