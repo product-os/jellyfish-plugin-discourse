@@ -1,4 +1,3 @@
-import { testUtils as coreTestUtils } from 'autumndb';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import {
@@ -7,6 +6,7 @@ import {
 } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { strict as assert } from 'assert';
+import { testUtils as autumndbTestUtils } from 'autumndb';
 import Bluebird from 'bluebird';
 import _ from 'lodash';
 import request from 'request';
@@ -178,8 +178,8 @@ const createPost = async (
 };
 
 const startSupportThread = async (username: string) => {
-	const title = coreTestUtils.generateRandomId();
-	const description = coreTestUtils.generateRandomId();
+	const title = autumndbTestUtils.generateRandomId();
+	const description = autumndbTestUtils.generateRandomId();
 	const post = await createPost(username, title, description);
 
 	return ctx.createSupportThread(user.id, session.id, title, {
@@ -209,7 +209,7 @@ describe('discourse-mirror', () => {
 		await deleteTopic(topicId);
 
 		// Create a whisper on the local support thread
-		const message = coreTestUtils.generateRandomId();
+		const message = autumndbTestUtils.generateRandomId();
 		const eventResponse = await ctx.createWhisper(
 			user.id,
 			session.id,
@@ -253,7 +253,7 @@ describe('discourse-mirror', () => {
 		await deleteTopic(topicId);
 
 		// Create a message on the local support thread
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const eventResponse = await ctx.createMessage(
 			user.id,
 			session.id,
@@ -296,7 +296,7 @@ describe('discourse-mirror', () => {
 
 		// Create whisper on support thread with non-moderator user
 		await setUser(nonModeratorUsername);
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const whisper = await ctx.createWhisper(
 			user.id,
 			session.id,
@@ -373,7 +373,7 @@ describe('discourse-mirror', () => {
 
 		// Create message on support thread with non-moderator user
 		await setUser(nonModeratorUsername);
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const message = await ctx.createMessage(
 			user.id,
 			session.id,
@@ -614,7 +614,7 @@ describe('discourse-mirror', () => {
 		);
 
 		// Create a whisper on the local support thread
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const whisper = await ctx.createWhisper(
 			user.id,
 			session.id,
@@ -674,7 +674,7 @@ describe('discourse-mirror', () => {
 		);
 
 		// Create a whisper on the local support thread
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const whisper = await ctx.createWhisper(
 			user.id,
 			session.id,
@@ -703,7 +703,7 @@ describe('discourse-mirror', () => {
 		});
 
 		// Update the local whisper
-		const newContent = coreTestUtils.generateRandomId();
+		const newContent = autumndbTestUtils.generateRandomId();
 		await ctx.worker.patchCard(
 			ctx.logContext,
 			session.id,
@@ -753,7 +753,7 @@ describe('discourse-mirror', () => {
 		);
 
 		// Create a message on the local support thread
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const message = await ctx.createMessage(
 			user.id,
 			session.id,
@@ -813,7 +813,7 @@ describe('discourse-mirror', () => {
 		);
 
 		// Create a message on the local support thread
-		const content = coreTestUtils.generateRandomId();
+		const content = autumndbTestUtils.generateRandomId();
 		const message = await ctx.createMessage(
 			user.id,
 			session.id,
@@ -842,7 +842,7 @@ describe('discourse-mirror', () => {
 		});
 
 		// Update the local message
-		const newContent = coreTestUtils.generateRandomId();
+		const newContent = autumndbTestUtils.generateRandomId();
 		await ctx.worker.patchCard(
 			ctx.logContext,
 			session.id,
@@ -892,7 +892,7 @@ describe('discourse-mirror', () => {
 		);
 
 		// Update local support thread title
-		const newTitle = coreTestUtils.generateRandomId();
+		const newTitle = autumndbTestUtils.generateRandomId();
 		await ctx.worker.patchCard(
 			ctx.logContext,
 			session.id,
