@@ -1,10 +1,10 @@
-import { testUtils as coreTestUtils } from 'autumndb';
 import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { UserContract } from '@balena/jellyfish-types/build/core';
 import { testUtils as workerTestUtils } from '@balena/jellyfish-worker';
 import { strict as assert } from 'assert';
+import { testUtils as coreTestUtils } from 'autumndb';
 import nock from 'nock';
 import { discoursePlugin } from '../../lib';
 
@@ -90,7 +90,7 @@ test('should not change the same user email', async () => {
 			coreTestUtils.generateRandomId(),
 			externalEvent,
 		);
-		const request = await ctx.queue.producer.enqueue(
+		const request = await ctx.worker.producer.enqueue(
 			ctx.worker.getId(),
 			ctx.session,
 			{
@@ -103,7 +103,7 @@ test('should not change the same user email', async () => {
 		);
 
 		await ctx.flushAll(ctx.session);
-		const result = await ctx.queue.producer.waitResults(
+		const result = await ctx.worker.producer.waitResults(
 			ctx.logContext,
 			request,
 		);
@@ -191,7 +191,7 @@ test('should add a new e-mail to a user', async () => {
 			'foobar',
 			externalEvent,
 		);
-		const request = await ctx.queue.producer.enqueue(
+		const request = await ctx.worker.producer.enqueue(
 			ctx.worker.getId(),
 			ctx.session,
 			{
@@ -204,7 +204,7 @@ test('should add a new e-mail to a user', async () => {
 		);
 		await ctx.flushAll(ctx.session);
 
-		const result = await ctx.queue.producer.waitResults(
+		const result = await ctx.worker.producer.waitResults(
 			ctx.logContext,
 			request,
 		);
