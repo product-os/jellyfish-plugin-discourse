@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.75 - 2022-04-13
+
+* Update secrets [Josh Bowling]
+
 ## 2.2.74 - 2022-04-13
 
 * Update internal-patch [Renovate Bot]
