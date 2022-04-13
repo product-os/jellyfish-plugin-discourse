@@ -12,15 +12,12 @@ services:
     environment:
       - LOGLEVEL=error
     secrets:
-      - integration_discourse_signature_key
       - integration_discourse_token
       - integration_discourse_username
     networks:
       - internal
 
 secrets:
-  integration_discourse_signature_key:
-    file: ./.balena/secrets/integration_discourse_signature_key
   integration_discourse_token:
     file: ./.balena/secrets/integration_discourse_token
   integration_discourse_username:
