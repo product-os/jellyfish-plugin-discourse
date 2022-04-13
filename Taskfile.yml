@@ -1,8 +1,6 @@
 version: '3'
 
 env:
-  INTEGRATION_DISCOURSE_SIGNATURE_KEY:
-    sh: cat /run/secrets/integration_discourse_signature_key
   INTEGRATION_DISCOURSE_TOKEN:
     sh: cat /run/secrets/integration_discourse_token
   INTEGRATION_DISCOURSE_USERNAME:
