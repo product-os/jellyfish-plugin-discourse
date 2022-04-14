@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.77 - 2022-04-14
+
+* Update secrets [Josh Bowling]
+
 ## 2.2.76 - 2022-04-13
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
