@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.22.14 to 0.22.15
+      hash: ac5a471311afd2e29b4fbbfccaae04e174678224
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.81
+  title: "'Update typedoc from 0.22.14 to 0.22.15'"
+  date: 2022-04-15T14:45:10.993Z
+- commits:
     - subject: 🔄 Synced file(s) with product-os/jellyfish-config
       hash: 73cba0d4119c3896c1187701109e466af873c7a3
       body: ""
