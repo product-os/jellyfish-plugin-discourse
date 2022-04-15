@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.80 - 2022-04-15
+
+* 🔄 Synced file(s) with product-os/jellyfish-config [joshbwlng]
+
 ## 2.2.79 - 2022-04-15
 
 * Bring secrets in with submodule [Josh Bowling]

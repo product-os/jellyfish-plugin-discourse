@@ -1,4 +1,16 @@
 - commits:
+    - subject: 🔄 Synced file(s) with product-os/jellyfish-config
+      hash: 73cba0d4119c3896c1187701109e466af873c7a3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 2.2.80
+  title: "'🔄 Synced file(s) with product-os/jellyfish-config'"
+  date: 2022-04-15T05:02:21.973Z
+- commits:
     - subject: Bring secrets in with submodule
       hash: 9c338276e7bd32b5ddc34ce5f5f7c226992bb0d2
       body: ""
