@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: d16089d162d8a2f4a47159210fabfddc69c97ac9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.87
+  title: "'Update internal-patch'"
+  date: 2022-04-16T12:54:35.047Z
+- commits:
     - subject: Bump secrets submodule
       hash: 66d0383a1503779571ca1787100cbd6b820f2779
       body: ""
