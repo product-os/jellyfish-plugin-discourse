@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 2.2.86 - 2022-04-16
+
+* Bump secrets submodule [Josh Bowling]
+
 ## 2.2.85 - 2022-04-16
 
 * Update @balena/jellyfish-environment from 9.1.19 to 10.0.0 [Renovate Bot]
