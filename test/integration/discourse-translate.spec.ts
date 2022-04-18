@@ -22,6 +22,8 @@ beforeAll(async () => {
 	});
 
 	// Disable all triggers
+	ctx.worker.contractsStream.removeAllListeners();
+	ctx.worker.contractsStream.close();
 	ctx.worker.setTriggers(ctx.logContext, []);
 
 	await workerTestUtils.translateBeforeAll(ctx);
