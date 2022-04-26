@@ -2,7 +2,10 @@ import { channelsPlugin } from '@balena/jellyfish-plugin-channels';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { UserContract } from '@balena/jellyfish-types/build/core';
-import { testUtils as workerTestUtils } from '@balena/jellyfish-worker';
+import {
+	ActionRequestContract,
+	testUtils as workerTestUtils,
+} from '@balena/jellyfish-worker';
 import { strict as assert } from 'assert';
 import { testUtils as coreTestUtils } from 'autumndb';
 import nock from 'nock';
@@ -92,17 +95,33 @@ test('should not change the same user email', async () => {
 			coreTestUtils.generateRandomId(),
 			externalEvent,
 		);
-		const request = await ctx.worker.producer.enqueue(
-			ctx.worker.getId(),
+		const request = await ctx.worker.insertCard<ActionRequestContract>(
+			ctx.logContext,
 			ctx.session,
+			ctx.worker.typeContracts['action-request@1.0.0'],
 			{
-				logContext: ctx.logContext,
-				action: 'action-integration-import-event@1.0.0',
-				card: event.id,
-				type: event.type,
-				arguments: {},
+				actor: ctx.adminUserId,
+				attachEvents: false,
+				timestamp: new Date().toISOString(),
+			},
+			{
+				type: 'action-request@1.0.0',
+				data: {
+					action: 'action-integration-import-event@1.0.0',
+					context: ctx.logContext,
+					card: event.id,
+					type: event.type,
+					actor: ctx.adminUserId,
+					epoch: new Date().valueOf(),
+					input: {
+						id: event.id,
+					},
+					timestamp: new Date().toISOString(),
+					arguments: {},
+				},
 			},
 		);
+		assert(request);
 
 		await ctx.flushAll(ctx.session);
 		const result = await ctx.worker.producer.waitResults(
@@ -193,17 +212,33 @@ test('should add a new e-mail to a user', async () => {
 			'foobar',
 			externalEvent,
 		);
-		const request = await ctx.worker.producer.enqueue(
-			ctx.worker.getId(),
+		const request = await ctx.worker.insertCard<ActionRequestContract>(
+			ctx.logContext,
 			ctx.session,
+			ctx.worker.typeContracts['action-request@1.0.0'],
 			{
-				logContext: ctx.logContext,
-				action: 'action-integration-import-event@1.0.0',
-				card: event.id,
-				type: event.type,
-				arguments: {},
+				actor: ctx.adminUserId,
+				attachEvents: false,
+				timestamp: new Date().toISOString(),
+			},
+			{
+				type: 'action-request@1.0.0',
+				data: {
+					action: 'action-integration-import-event@1.0.0',
+					context: ctx.logContext,
+					card: event.id,
+					type: event.type,
+					actor: ctx.adminUserId,
+					epoch: new Date().valueOf(),
+					input: {
+						id: event.id,
+					},
+					timestamp: new Date().toISOString(),
+					arguments: {},
+				},
 			},
 		);
+		assert(request);
 		await ctx.flushAll(ctx.session);
 
 		const result = await ctx.worker.producer.waitResults(
