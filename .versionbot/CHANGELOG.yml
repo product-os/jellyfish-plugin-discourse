@@ -1,5 +1,25 @@
 - commits:
     - subject: Update internal-patch
+      hash: 9259c0e84e19ac28da5b88f49e2d6626fefa727a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update @balena/jellyfish-environment from 10.0.2 to 11.0.0
+      hash: 3244afe04e08b23bd4eb669f3a308846c73c718c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.2.99
+  title: "'Update internal-patch'"
+  date: 2022-04-27T17:18:18.449Z
+- commits:
+    - subject: Update internal-patch
       hash: 2853d320db6bac8bd1c1f2b0087da88b0aea6b79
       body: ""
       footer:
