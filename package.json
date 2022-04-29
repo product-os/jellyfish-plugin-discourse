@@ -47,8 +47,8 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.26",
-    "@balena/jellyfish-worker": "^22.1.11",
-    "autumndb": "^19.1.28",
+    "@balena/jellyfish-worker": "^22.1.12",
+    "autumndb": "^19.1.29",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
@@ -57,8 +57,8 @@
     "@balena/jellyfish-config": "^2.0.6",
     "@balena/jellyfish-environment": "^11.0.0",
     "@balena/jellyfish-plugin-channels": "^2.0.99",
-    "@balena/jellyfish-plugin-default": "^24.0.88",
-    "@balena/jellyfish-plugin-product-os": "^5.0.7",
+    "@balena/jellyfish-plugin-default": "^24.0.89",
+    "@balena/jellyfish-plugin-product-os": "^5.0.8",
     "@balena/jellyfish-types": "^2.0.5",
     "@balena/lint": "^6.2.0",
     "@types/bluebird": "^3.5.36",
