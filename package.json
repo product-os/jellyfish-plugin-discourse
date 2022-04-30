@@ -48,7 +48,7 @@
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.26",
     "@balena/jellyfish-worker": "^23.0.2",
-    "autumndb": "^19.1.32",
+    "autumndb": "^19.1.33",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
@@ -56,8 +56,8 @@
   "devDependencies": {
     "@balena/jellyfish-config": "^2.0.6",
     "@balena/jellyfish-environment": "^11.0.1",
-    "@balena/jellyfish-plugin-channels": "^2.0.101",
-    "@balena/jellyfish-plugin-default": "^24.0.93",
+    "@balena/jellyfish-plugin-channels": "^2.0.102",
+    "@balena/jellyfish-plugin-default": "^24.0.94",
     "@balena/jellyfish-plugin-product-os": "^5.0.12",
     "@balena/jellyfish-types": "^2.0.5",
     "@balena/lint": "^6.2.0",
