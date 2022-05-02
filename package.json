@@ -1,7 +1,7 @@
 {
   "name": "@balena/jellyfish-plugin-discourse",
   "description": "Discourse Jellyfish Plugin",
-  "version": "2.2.107",
+  "version": "2.2.108",
   "repository": {
     "type": "git",
     "url": "https://github.com/product-os/jellyfish-plugin-discourse"
@@ -83,6 +83,6 @@
     "pre-commit": "npx lint-staged"
   },
   "versionist": {
-    "publishedAt": "2022-05-02T10:59:23.900Z"
+    "publishedAt": "2022-05-02T14:40:56.990Z"
   }
 }
