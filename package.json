@@ -56,9 +56,9 @@
   "devDependencies": {
     "@balena/jellyfish-config": "^2.0.6",
     "@balena/jellyfish-environment": "^11.0.3",
-    "@balena/jellyfish-plugin-channels": "^2.0.112",
-    "@balena/jellyfish-plugin-default": "^24.0.109",
-    "@balena/jellyfish-plugin-product-os": "^5.0.20",
+    "@balena/jellyfish-plugin-channels": "^2.0.113",
+    "@balena/jellyfish-plugin-default": "^24.0.110",
+    "@balena/jellyfish-plugin-product-os": "^5.0.21",
     "@balena/jellyfish-types": "^2.0.5",
     "@balena/lint": "^6.2.0",
     "@types/bluebird": "^3.5.36",
