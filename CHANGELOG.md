@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 3.0.1 - 2022-05-11
+
+* Update autumndb from 19.1.41 to 19.3.1 [Renovate Bot]
+
 ## 3.0.0 - 2022-05-11
 
 * Update worker to 24 [karaxuna]
