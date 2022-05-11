@@ -1573,6 +1573,8 @@ export class DiscourseIntegration implements Integration {
 }
 
 export const discourseIntegrationDefinition: IntegrationDefinition = {
+	slug: SLUG,
+
 	initialize: async (options) => new DiscourseIntegration(options),
 	isEventValid: (_logContext, token, rawEvent, headers) => {
 		const signature = headers['x-discourse-event-signature'];
