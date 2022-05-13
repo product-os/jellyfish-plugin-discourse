@@ -57,7 +57,7 @@
     "@balena/jellyfish-config": "^2.0.6",
     "@balena/jellyfish-environment": "^11.0.3",
     "@balena/jellyfish-plugin-channels": "^2.0.115",
-    "@balena/jellyfish-plugin-default": "^25.1.0",
+    "@balena/jellyfish-plugin-default": "^26.0.0",
     "@balena/jellyfish-plugin-product-os": "^5.0.24",
     "@balena/jellyfish-types": "^2.0.5",
     "@balena/lint": "^6.2.0",
