@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add test data cleanup script
+      hash: b565b3981da4cfa79fd0cfd2ce5f4f8175d78d02
+      body: |
+        Add script to clean up test data
+        created during CI.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.9
+  title: "'Add test data cleanup script'"
+  date: 2022-05-25T01:32:23.039Z
+- commits:
     - subject: Update external-non-major (external non-major bumps)
       hash: a33d341906da7d0071cb4e5b5e5ba81eb3e093df
       body: ""
