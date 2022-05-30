@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.11 - 2022-05-30
+
+* Update jest packages [Josh Bowling]
+
 ## 5.0.10 - 2022-05-27
 
 * Update internal-patch (internal patch bumps) [Renovate Bot]
