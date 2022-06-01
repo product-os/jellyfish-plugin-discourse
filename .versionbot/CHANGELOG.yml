@@ -1,4 +1,24 @@
 - commits:
+    - subject: Update @balena/jellyfish-worker from 27.1.0 to 27.2.1
+      hash: 150ecef98db72c74afad989e71c437b8ec4405a4
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update @balena/jellyfish-plugin-default from 27.3.2 to 27.4.2
+      hash: ffcc2261f51656cb0c19e9befd3b0da3bc239c05
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.13
+  title: "'Update @balena/jellyfish-worker from 27.1.0 to 27.2.1'"
+  date: 2022-06-01T04:32:07.832Z
+- commits:
     - subject: Update typescript from 4.6.4 to 4.7.2
       hash: 6bc1f54285decb869d666384dcc8ae44c57570cf
       body: ""
