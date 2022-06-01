@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update typescript from 4.6.4 to 4.7.2
+      hash: 6bc1f54285decb869d666384dcc8ae44c57570cf
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update autumndb from 20.0.6 to 20.1.0
+      hash: 3ebeb7c6fab4c2881df8e892d44c6e86cc489e1c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update typedoc from 0.22.15 to 0.22.16
+      hash: 156fe062e551a3c9cb5e20e76b5b34e8b7c0f298
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.12
+  title: "'Update typescript from 4.6.4 to 4.7.2'"
+  date: 2022-05-31T23:55:27.413Z
+- commits:
     - subject: Update jest packages
       hash: a8ab2b6ac2efde4193883a58afe8fb45101b29f6
       body: ""

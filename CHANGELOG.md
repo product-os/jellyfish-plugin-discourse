@@ -4,6 +4,12 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.12 - 2022-05-31
+
+* Update typescript from 4.6.4 to 4.7.2 [Renovate Bot]
+* Update autumndb from 20.0.6 to 20.1.0 [Renovate Bot]
+* Update typedoc from 0.22.15 to 0.22.16 [Renovate Bot]
+
 ## 5.0.11 - 2022-05-30
 
 * Update jest packages [Josh Bowling]
