@@ -1,4 +1,18 @@
 - commits:
+    - subject: Bump external packages
+      hash: 04bd07b45f3a2544e524b1c3d37e362003793ac1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.17
+  title: "'Bump external packages'"
+  date: 2022-06-06T08:10:03.305Z
+- commits:
     - subject: Update typescript from 4.7.2 to 4.7.3
       hash: 58927611b631743e01a0a4110418e9ef1d800ccd
       body: ""
