@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-plugin-default from 27.4.2 to 27.5.0
+      hash: 083ec8b0050cbfd2237b5166efdc8cccf86e653d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.18
+  title: "'Update @balena/jellyfish-plugin-default from 27.4.2 to 27.5.0'"
+  date: 2022-06-07T01:44:55.667Z
+- commits:
     - subject: Bump external packages
       hash: 04bd07b45f3a2544e524b1c3d37e362003793ac1
       body: ""
