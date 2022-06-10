@@ -18,7 +18,8 @@
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
-      "status": "open"
+      "status": "open",
+      "integration_source": "discourse"
     }
   },
   "tail": [
@@ -55,7 +56,8 @@
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
-            "status": "open"
+            "status": "open",
+            "integration_source": "discourse"
           }
         }
       }
@@ -83,7 +85,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Foo Bar Baz xxxxxxxxx"
-        }
+        },
+        "integration_source": "discourse"
       }
     },
     {
@@ -109,7 +112,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Test with preview\n\nhttps://forums.balena.io/t/my-issue-76c3d3a9-c85c-4805-95ae-94bee4150b31/6949"
-        }
+        },
+        "integration_source": "discourse"
       }
     }
   ]

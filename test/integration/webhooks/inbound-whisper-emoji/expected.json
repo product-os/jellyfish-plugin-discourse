@@ -18,7 +18,8 @@
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
-      "status": "open"
+      "status": "open",
+      "integration_source": "discourse"
     }
   },
   "tail": [
@@ -55,7 +56,8 @@
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
-            "status": "open"
+            "status": "open",
+            "integration_source": "discourse"
           }
         }
       }
@@ -83,7 +85,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Supervisor Version 88888888888"
-        }
+        },
+        "integration_source": "discourse"
       }
     },
     {
@@ -109,7 +112,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Emoji whisper :smiley:"
-        }
+        },
+        "integration_source": "discourse"
       }
     }
   ]

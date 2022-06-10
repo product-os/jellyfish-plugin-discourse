@@ -21,7 +21,8 @@
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
-      "status": "open"
+      "status": "open",
+      "integration_source": "discourse"
     }
   },
   "tail": [
@@ -61,7 +62,8 @@
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
-            "status": "open"
+            "status": "open",
+            "integration_source": "discourse"
           }
         }
       }
@@ -89,7 +91,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "777777777777777777777777777"
-        }
+        },
+        "integration_source": "discourse"
       }
     }
   ]

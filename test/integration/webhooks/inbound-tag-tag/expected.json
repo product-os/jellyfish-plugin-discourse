@@ -21,7 +21,8 @@
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
-      "status": "open"
+      "status": "open",
+      "integration_source": "discourse"
     }
   },
   "tail": [
@@ -58,7 +59,8 @@
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
-            "status": "open"
+            "status": "open",
+            "integration_source": "discourse"
           }
         }
       }
@@ -86,7 +88,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Tag tag test 1234567"
-        }
+        },
+        "integration_source": "discourse"
       }
     },
     {
