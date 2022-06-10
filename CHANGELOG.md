@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.23 - 2022-06-10
+
+* Set data.integration_source on synced contracts [Josh Bowling]
+
 ## 5.0.22 - 2022-06-10
 
 * Improve performance of mirror triggered actions [Lucian Buzzo]
