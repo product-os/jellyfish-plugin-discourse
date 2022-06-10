@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.22 - 2022-06-10
+
+* Improve performance of mirror triggered actions [Lucian Buzzo]
+
 ## 5.0.21 - 2022-06-09
 
 * Update resinci/jellyfish-test from v3.0.13 to v3.0.14 [Renovate Bot]

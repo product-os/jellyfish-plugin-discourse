@@ -1,4 +1,21 @@
 - commits:
+    - subject: Improve performance of mirror triggered actions
+      hash: a9655632947c0bff6526a999df51291d475c8f65
+      body: |
+        This change splits the existing triggered action into two, with much
+        more specific filters that prevent the integration running unnecessarily
+        on non-discourse threads.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+        signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+      author: Lucian Buzzo
+      nested: []
+  version: 5.0.22
+  title: "'Improve performance of mirror triggered actions'"
+  date: 2022-06-10T02:29:41.860Z
+- commits:
     - subject: Update resinci/jellyfish-test from v3.0.13 to v3.0.14
       hash: 4ddb9525cc433705e82b662fbe770406ea8e9f6c
       body: ""
