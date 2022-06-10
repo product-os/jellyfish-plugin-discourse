@@ -18,7 +18,8 @@
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
-      "status": "open"
+      "status": "open",
+      "integration_source": "discourse"
     }
   },
   "tail": [
@@ -55,7 +56,8 @@
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
-            "status": "open"
+            "status": "open",
+            "integration_source": "discourse"
           }
         }
       }
@@ -83,7 +85,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Foo Bar baz test test"
-        }
+        },
+        "integration_source": "discourse"
       }
     },
     {
@@ -109,7 +112,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "My image\n\n![46|690x431](upload://2qAvUBRQMYZk8JUlNa5v0rtAEwH.png)"
-        }
+        },
+        "integration_source": "discourse"
       }
     }
   ]

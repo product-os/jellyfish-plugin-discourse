@@ -541,6 +541,7 @@ function getThreadCard(mirrorId: string, data: any, options: any = {}): any {
 			alertsUser: [],
 			description: '',
 			status: 'open',
+			integration_source: SLUG,
 		},
 	};
 }
@@ -591,6 +592,7 @@ function getEventCard(mirrorId: string, data: any, options: any): any {
 			actor: options.actor,
 			target: options.target.id,
 			mirrors: [mirrorId],
+			integration_source: SLUG,
 			payload: {
 				mentionsUser: [],
 				alertsUser: [],

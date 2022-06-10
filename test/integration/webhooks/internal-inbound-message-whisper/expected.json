@@ -18,7 +18,8 @@
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
-      "status": "open"
+      "status": "open",
+      "integration_source": "discourse"
     }
   },
   "tail": [
@@ -55,7 +56,8 @@
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
-            "status": "open"
+            "status": "open",
+            "integration_source": "discourse"
           }
         }
       }
@@ -83,7 +85,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "Issue description foo bar baz"
-        }
+        },
+        "integration_source": "discourse"
       }
     },
     {
@@ -109,7 +112,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "My message"
-        }
+        },
+        "integration_source": "discourse"
       }
     },
     {
@@ -135,7 +139,8 @@
           "mentionsGroup": [],
           "alertsGroup": [],
           "message": "My whisper"
-        }
+        },
+        "integration_source": "discourse"
       }
     }
   ]
