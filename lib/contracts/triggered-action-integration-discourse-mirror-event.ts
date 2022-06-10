@@ -10,18 +10,18 @@ export const triggeredActionIntegrationDiscourseMirrorEvent: ContractDefinition 
 			schedule: 'sync',
 			filter: {
 				type: 'object',
-				anyOf: [
-					{
-						required: ['type'],
-						properties: {
-							type: {
-								type: 'string',
-								enum: ['message@1.0.0', 'whisper@1.0.0'],
-							},
-						},
+				properties: {
+					type: {
+						type: 'string',
+						enum: ['message@1.0.0', 'whisper@1.0.0'],
 					},
-					{
-						required: ['type', 'data', 'name'],
+					data: {
+						type: 'object',
+					},
+				},
+				$$links: {
+					'is attached to': {
+						type: 'object',
 						properties: {
 							type: {
 								type: 'string',
@@ -29,13 +29,20 @@ export const triggeredActionIntegrationDiscourseMirrorEvent: ContractDefinition 
 							},
 							data: {
 								type: 'object',
-							},
-							name: {
-								type: 'string',
+								required: ['mirrors'],
+								properties: {
+									mirrors: {
+										type: 'array',
+										contains: {
+											type: 'string',
+											pattern: '^https://forums.balena.io',
+										},
+									},
+								},
 							},
 						},
 					},
-				],
+				},
 			},
 			action: 'action-integration-discourse-mirror-event@1.0.0',
 			target: {
