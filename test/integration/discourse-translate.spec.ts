@@ -10,6 +10,7 @@ import webhooks from './webhooks';
 
 const TOKEN = defaultEnvironment.integration.discourse;
 let ctx: workerTestUtils.TestContext;
+let typeContractCount = 0;
 
 beforeAll(async () => {
 	ctx = await workerTestUtils.newContext({
@@ -21,16 +22,53 @@ beforeAll(async () => {
 		],
 	});
 
-	// Disable all triggers
-	ctx.worker.contractsStream.removeAllListeners();
-	ctx.worker.contractsStream.close();
+	// TODO: Improve translate test suite/protocol to avoid this
+	const triggeredActions = await ctx.kernel.query(ctx.logContext, ctx.session, {
+		type: 'object',
+		properties: {
+			type: {
+				const: 'triggered-action@1.0.0',
+			},
+			active: {
+				const: true,
+			},
+		},
+	});
+	await Promise.all(
+		triggeredActions.map(async (triggeredAction) => {
+			await ctx.kernel.patchContractBySlug(
+				ctx.logContext,
+				ctx.session,
+				`${triggeredAction.slug}@1.0.0`,
+				[
+					{
+						op: 'replace',
+						path: '/active',
+						value: false,
+					},
+				],
+			);
+		}),
+	);
 	ctx.worker.setTriggers(ctx.logContext, []);
+	typeContractCount = Object.keys(ctx.worker.typeContracts).length;
 
 	await workerTestUtils.translateBeforeAll(ctx);
 });
 
 afterEach(async () => {
 	await workerTestUtils.translateAfterEach(ctx);
+
+	// Ensure worker instance has all type contracts for next test
+	await ctx.retry(
+		() => {
+			return Object.keys(ctx.worker.typeContracts).length;
+		},
+		(currentTypeContractCount: number) => {
+			return currentTypeContractCount === typeContractCount;
+		},
+		30,
+	);
 });
 
 afterAll(() => {
