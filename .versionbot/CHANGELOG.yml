@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependencies
+      hash: 8bd0855f60bd2816ac4e40c1abcf54d92feefd3e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.24
+  title: "'Update dependencies'"
+  date: 2022-06-12T10:21:32.924Z
+- commits:
     - subject: Set data.integration_source on synced contracts
       hash: a3f9636d5a2f8d3fcfce53d248b35ad59d4c6add
       body: ""

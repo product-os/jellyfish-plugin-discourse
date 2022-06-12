@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.24 - 2022-06-12
+
+* Update dependencies [Josh Bowling]
+
 ## 5.0.23 - 2022-06-10
 
 * Set data.integration_source on synced contracts [Josh Bowling]
