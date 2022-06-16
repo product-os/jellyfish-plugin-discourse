@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.27 - 2022-06-16
+
+* Update internal packages [Josh Bowling]
+
 ## 5.0.26 - 2022-06-14
 
 * Use official Postgres 14 image [Josh Bowling]
