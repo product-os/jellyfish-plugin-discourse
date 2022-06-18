@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update typescript from 4.7.3 to 4.7.4
+      hash: e6efe3ef05010d29293af31f467605c49d849ba1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.28
+  title: "'Update typescript from 4.7.3 to 4.7.4'"
+  date: 2022-06-18T04:29:27.152Z
+- commits:
     - subject: Update internal packages
       hash: 5bfb4621386bd5131367bf00bce86e0c500113dc
       body: ""
