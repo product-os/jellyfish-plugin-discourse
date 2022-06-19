@@ -1,4 +1,18 @@
 - commits:
+    - subject: Drop @balena/jellyfish-config
+      hash: f70b8554f15b2959864f895e5702b6cea64cf0d0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.30
+  title: "'Drop @balena/jellyfish-config'"
+  date: 2022-06-19T11:46:01.184Z
+- commits:
     - subject: Use standard redis image
       hash: 8b06510a8c9197a645df55f97b676e2618b433e3
       body: ""

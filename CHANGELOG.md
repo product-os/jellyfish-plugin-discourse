@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.30 - 2022-06-19
+
+* Drop @balena/jellyfish-config [Josh Bowling]
+
 ## 5.0.29 - 2022-06-18
 
 * Use standard redis image [Josh Bowling]
