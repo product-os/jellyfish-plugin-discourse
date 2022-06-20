@@ -1,4 +1,18 @@
 - commits:
+    - subject: "CI: Use standard node image"
+      hash: 042338003b0a0fd7a32f711b0e01d6240984dad7
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.31
+  title: "'CI: Use standard node image'"
+  date: 2022-06-20T03:32:51.997Z
+- commits:
     - subject: Drop @balena/jellyfish-config
       hash: f70b8554f15b2959864f895e5702b6cea64cf0d0
       body: ""
