@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.32 - 2022-06-21
+
+* Bump dependencies [Josh Bowling]
+
 ## 5.0.31 - 2022-06-20
 
 * CI: Use standard node image [Josh Bowling]

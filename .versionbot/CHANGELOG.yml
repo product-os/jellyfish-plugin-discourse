@@ -1,4 +1,18 @@
 - commits:
+    - subject: Bump dependencies
+      hash: 367a42266df0f0dcede2ff14e8ae84061fee6c42
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.32
+  title: "'Bump dependencies'"
+  date: 2022-06-21T02:43:18.864Z
+- commits:
     - subject: "CI: Use standard node image"
       hash: 042338003b0a0fd7a32f711b0e01d6240984dad7
       body: ""
