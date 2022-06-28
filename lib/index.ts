@@ -22,10 +22,6 @@ export const discoursePlugin = (): PluginDefinition => {
 				slug: 'plugin-default',
 				version: '>=24.x',
 			},
-			{
-				slug: 'plugin-channels',
-				version: '>=2.x',
-			},
 		],
 	};
 };
