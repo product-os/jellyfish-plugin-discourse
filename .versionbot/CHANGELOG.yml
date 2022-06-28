@@ -1,4 +1,19 @@
 - commits:
+    - subject: Drop plugin-channels
+      hash: dc0be5717c2fd7d0bb9552d167abe5d5cea18f89
+      body: |
+        Dropping plugin-channels as it has been merged into the worker
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.38
+  title: "'Drop plugin-channels'"
+  date: 2022-06-28T05:20:33.075Z
+- commits:
     - subject: "Update: update typedoc from 0.23.1 to 0.23.2"
       hash: 73070bf424144aebe503268d628ad699f0a2288e
       body: ""
