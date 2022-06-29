@@ -1,4 +1,24 @@
 - commits:
+    - subject: Update @balena/jellyfish-environment from 12.0.12 to 12.1.0
+      hash: 8084eae0e15c0e722b1a8006b457d93de84236ae
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+    - subject: Update autumndb from 20.1.23 to 20.2.1
+      hash: 80caf0019d9c0f6f62f72df0530f6ee87e7aaebc
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 5.0.39
+  title: "'Update @balena/jellyfish-environment from 12.0.12 to 12.1.0'"
+  date: 2022-06-29T11:40:20.639Z
+- commits:
     - subject: Drop plugin-channels
       hash: dc0be5717c2fd7d0bb9552d167abe5d5cea18f89
       body: |
