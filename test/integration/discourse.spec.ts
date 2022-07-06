@@ -1,12 +1,11 @@
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
-import { UserContract } from '@balena/jellyfish-types/build/core';
 import {
 	ActionRequestContract,
 	testUtils as workerTestUtils,
 } from '@balena/jellyfish-worker';
 import { strict as assert } from 'assert';
-import { testUtils as coreTestUtils } from 'autumndb';
+import { testUtils as coreTestUtils, UserContract } from 'autumndb';
 import nock from 'nock';
 import { discoursePlugin } from '../../lib';
 

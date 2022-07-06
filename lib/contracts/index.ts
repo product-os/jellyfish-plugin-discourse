@@ -1,4 +1,4 @@
-import type { ContractDefinition } from '@balena/jellyfish-types/build/core';
+import type { ContractDefinition } from 'autumndb';
 import { channelDiscussionThreads } from './channel-discussion-threads';
 import { triggeredActionIntegrationDiscourseMirrorEvent } from './triggered-action-integration-discourse-mirror-event';
 import { triggeredActionIntegrationDiscourseMirrorThread } from './triggered-action-integration-discourse-mirror-thread';

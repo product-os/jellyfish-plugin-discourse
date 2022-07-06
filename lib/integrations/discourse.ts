@@ -1,11 +1,11 @@
 import * as assert from '@balena/jellyfish-assert';
-import type { Contract } from '@balena/jellyfish-types/build/core';
 import {
 	Integration,
 	IntegrationDefinition,
 	SequenceItem,
 	syncErrors,
 } from '@balena/jellyfish-worker';
+import type { Contract } from 'autumndb';
 import type { Method } from 'axios';
 import Bluebird from 'bluebird';
 import crypto from 'crypto';
