@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-plugin-default from 27.8.19 to 27.9.1
+      hash: 91f435a7cf4366926d9d70cfbf73bd7dd8ee4c22
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 5.0.42
+  title: "'Update @balena/jellyfish-plugin-default from 27.8.19 to 27.9.1'"
+  date: 2022-07-06T04:01:20.051Z
+- commits:
     - subject: Update autumndb from 20.2.1 to 20.3.0
       hash: 5bce9bb63f25be72484f2099c1d8df525738180b
       body: ""
