@@ -1,4 +1,18 @@
 - commits:
+    - subject: Drop jellyfish-types
+      hash: 809231b15b985460f4a5fae62920580d571acec2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.43
+  title: "'Drop jellyfish-types'"
+  date: 2022-07-06T09:11:57.925Z
+- commits:
     - subject: Update @balena/jellyfish-plugin-default from 27.8.19 to 27.9.1
       hash: 91f435a7cf4366926d9d70cfbf73bd7dd8ee4c22
       body: ""

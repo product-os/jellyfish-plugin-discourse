@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.43 - 2022-07-06
+
+* Drop jellyfish-types [Josh Bowling]
+
 ## 5.0.42 - 2022-07-06
 
 * Update @balena/jellyfish-plugin-default from 27.8.19 to 27.9.1 [renovate[bot]]
