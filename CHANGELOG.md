@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.45 - 2022-07-08
+
+* Update @balena/jellyfish-environment from 12.1.0 to 12.2.0 [renovate[bot]]
+
 ## 5.0.44 - 2022-07-08
 
 * Update typedoc from 0.23.5 to 0.23.6 [renovate[bot]]
