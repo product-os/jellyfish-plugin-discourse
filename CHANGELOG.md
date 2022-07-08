@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.44 - 2022-07-08
+
+* Update typedoc from 0.23.5 to 0.23.6 [renovate[bot]]
+
 ## 5.0.43 - 2022-07-06
 
 * Drop jellyfish-types [Josh Bowling]
