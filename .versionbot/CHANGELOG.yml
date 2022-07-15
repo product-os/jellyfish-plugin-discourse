@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update translate tests
+      hash: 3e758f51d8326741cf5669165f4747b29f942cef
+      body: |
+        Update translate test expected datasets to include the new
+        data.payload.reactions set on message contracts.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.47
+  title: "'Update translate tests'"
+  date: 2022-07-15T01:55:59.055Z
+- commits:
     - subject: Update typedoc from 0.23.6 to 0.23.7
       hash: 6f3d812eb345870b766060eff83063b7074440ef
       body: ""
