@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Foo bar baz 12345678"
+          "message": "Foo bar baz 12345678",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

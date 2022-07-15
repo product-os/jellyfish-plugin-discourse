@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Supervisor Version 88888888888"
+          "message": "Supervisor Version 88888888888",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
@@ -111,7 +112,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Emoji whisper :smiley:"
+          "message": "Emoji whisper :smiley:",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

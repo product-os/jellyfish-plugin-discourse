@@ -57,7 +57,7 @@ afterAll(() => {
 	return workerTestUtils.destroyContext(ctx);
 });
 
-describe('discourse-translate', () => {
+describe('translate', () => {
 	for (const testCaseName of Object.keys(webhooks)) {
 		const testCase = webhooks[testCaseName];
 		const expected = {

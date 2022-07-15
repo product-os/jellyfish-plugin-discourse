@@ -90,7 +90,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "777777777777777777777777777"
+          "message": "777777777777777777777777777",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

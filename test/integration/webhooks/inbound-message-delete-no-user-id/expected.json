@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Foo Bar Baz 99999999"
+          "message": "Foo Bar Baz 99999999",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
@@ -111,7 +112,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Message 1"
+          "message": "Message 1",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

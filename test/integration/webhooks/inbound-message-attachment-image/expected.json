@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Foo Bar baz test test"
+          "message": "Foo Bar baz test test",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
@@ -111,7 +112,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "My image\n\n![46|690x431](upload://2qAvUBRQMYZk8JUlNa5v0rtAEwH.png)"
+          "message": "My image\n\n![46|690x431](upload://2qAvUBRQMYZk8JUlNa5v0rtAEwH.png)",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

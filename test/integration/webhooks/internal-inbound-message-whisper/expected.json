@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Issue description foo bar baz"
+          "message": "Issue description foo bar baz",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
@@ -111,7 +112,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "My message"
+          "message": "My message",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
@@ -138,7 +140,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "My whisper"
+          "message": "My whisper",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
