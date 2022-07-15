@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Foo Bar :grinning: baz :sweat_smile:"
+          "message": "Foo Bar :grinning: baz :sweat_smile:",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

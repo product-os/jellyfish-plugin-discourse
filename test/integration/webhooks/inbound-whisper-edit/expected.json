@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Test 0000000000000000"
+          "message": "Test 0000000000000000",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }
@@ -111,7 +112,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Edited whisper"
+          "message": "Edited whisper",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

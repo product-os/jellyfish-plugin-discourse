@@ -84,7 +84,8 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Device Type:\nOS version:\nSupervisor Version:"
+          "message": "Device Type:\nOS version:\nSupervisor Version:",
+          "reactions": {}
         },
         "integration_source": "discourse"
       }

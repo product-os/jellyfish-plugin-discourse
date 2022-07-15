@@ -187,7 +187,7 @@ const startSupportThread = async (username: string) => {
 	});
 };
 
-describe('discourse-mirror', () => {
+describe('mirror', () => {
 	it('should send, but not sync, a whisper to a deleted thread', async () => {
 		await setUser(defaultEnvironment.integration.discourse.username);
 
