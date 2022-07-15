@@ -3,7 +3,6 @@ import {
 	defaultPlugin,
 	testUtils as pluginDefaultTestUtils,
 } from '@balena/jellyfish-plugin-default';
-import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { strict as assert } from 'assert';
 import { testUtils as autumndbTestUtils } from 'autumndb';
 import Bluebird from 'bluebird';
@@ -20,7 +19,7 @@ let session: any = {};
 
 beforeAll(async () => {
 	ctx = await pluginDefaultTestUtils.newContext({
-		plugins: [productOsPlugin(), defaultPlugin(), discoursePlugin()],
+		plugins: [defaultPlugin(), discoursePlugin()],
 	});
 
 	// Standard user
