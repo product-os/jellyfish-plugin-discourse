@@ -1,4 +1,26 @@
 - commits:
+    - subject: Update @balena/jellyfish-worker from 31.2.0 to 31.4.0
+      hash: 1b33c5833bb0a5796622685ebf6b264272b89520
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+    - subject: Drop plugin-product-os
+      hash: c4aea725e37e88681453597a09152ea25feb62f8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.48
+  title: "'Update @balena/jellyfish-worker from 31.2.0 to 31.4.0'"
+  date: 2022-07-15T18:33:16.714Z
+- commits:
     - subject: Update translate tests
       hash: 3e758f51d8326741cf5669165f4747b29f942cef
       body: |
