@@ -1,4 +1,3 @@
-import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import {
 	ActionRequestContract,
 	testUtils as workerTestUtils,
@@ -12,7 +11,7 @@ let ctx: workerTestUtils.TestContext;
 
 beforeAll(async () => {
 	ctx = await workerTestUtils.newContext({
-		plugins: [defaultPlugin(), discoursePlugin()],
+		plugins: [discoursePlugin()],
 	});
 
 	// TODO: Improve translate test suite/protocol to avoid this

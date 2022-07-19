@@ -17,11 +17,5 @@ export const discoursePlugin = (): PluginDefinition => {
 		actions,
 		contracts,
 		integrationMap: integrations,
-		requires: [
-			{
-				slug: 'plugin-default',
-				version: '>=24.x',
-			},
-		],
 	};
 };
