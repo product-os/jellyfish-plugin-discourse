@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 5.0.50 - 2022-07-19
+
+* Drop plugin-default [Josh Bowling]
+
 ## 5.0.49 - 2022-07-18
 
 * Update typedoc from 0.23.7 to 0.23.8 [renovate[bot]]

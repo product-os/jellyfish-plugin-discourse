@@ -1,4 +1,18 @@
 - commits:
+    - subject: Drop plugin-default
+      hash: 1f7cd577e7b740e72966dfdfbad7d9eee63a97a1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.50
+  title: "'Drop plugin-default'"
+  date: 2022-07-19T02:07:41.700Z
+- commits:
     - subject: Update typedoc from 0.23.7 to 0.23.8
       hash: e4ea3da6dc025c6a66448b4778b27ed564a1cfaa
       body: ""
