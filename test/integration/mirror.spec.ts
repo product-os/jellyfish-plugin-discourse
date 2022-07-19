@@ -1,7 +1,11 @@
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { testUtils as workerTestUtils } from '@balena/jellyfish-worker';
 import { strict as assert } from 'assert';
-import { testUtils as autumndbTestUtils } from 'autumndb';
+import {
+	AutumnDBSession,
+	testUtils as autumndbTestUtils,
+	UserContract,
+} from 'autumndb';
 import Bluebird from 'bluebird';
 import _ from 'lodash';
 import request from 'request';
@@ -11,8 +15,8 @@ const TOKEN = defaultEnvironment.integration.discourse;
 const { category } = defaultEnvironment.test.integration.discourse;
 
 let ctx: workerTestUtils.TestContext;
-let user: any = {};
-let session: any = {};
+let user: UserContract;
+let session: AutumnDBSession;
 
 beforeAll(async () => {
 	ctx = await workerTestUtils.newContext({
@@ -31,14 +35,14 @@ afterAll(() => {
 });
 
 const setUser = async (username: string) => {
-	user = await ctx.kernel.getContractBySlug(
+	const result = await ctx.kernel.getContractBySlug<UserContract>(
 		ctx.logContext,
 		ctx.session,
 		`user-${username}@latest`,
 	);
-	assert(user);
-	session = await ctx.createSession(user);
-	assert(session);
+	assert(result);
+	user = result;
+	session = { actor: user };
 };
 
 const deleteTopic = async (id: string) => {
@@ -172,7 +176,7 @@ const startSupportThread = async (username: string) => {
 	const description = autumndbTestUtils.generateRandomId();
 	const post = await createPost(username, title, description);
 
-	return ctx.createSupportThread(user.id, session.id, title, {
+	return ctx.createSupportThread(user.id, session, title, {
 		mirrors: [`https://forums.balena.io/t/${post.topic_id}`],
 		environment: 'production',
 		inbox: 'S/Forums',
@@ -202,7 +206,7 @@ describe('mirror', () => {
 		const message = autumndbTestUtils.generateRandomId();
 		const eventResponse = await ctx.createWhisper(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			message,
 		);
@@ -246,7 +250,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const eventResponse = await ctx.createMessage(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -289,7 +293,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const whisper = await ctx.createWhisper(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -366,7 +370,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const message = await ctx.createMessage(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -423,7 +427,7 @@ describe('mirror', () => {
 		// Patch support thread tags with no changes
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['support-thread@1.0.0'],
 			{
 				attachEvents: true,
@@ -438,7 +442,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Confirm remote post properties
 		const mirrorId: string = (supportThread.data as any).mirrors[0];
@@ -461,7 +465,7 @@ describe('mirror', () => {
 		// Add a tag to the local support thread
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['support-thread@1.0.0'],
 			{
 				attachEvents: true,
@@ -476,12 +480,12 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Now remove the new tag
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['support-thread@1.0.0'],
 			{
 				attachEvents: true,
@@ -496,7 +500,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Check that the remote topic has no tags
 		const mirrorId: string = (supportThread.data as any).mirrors[0];
@@ -523,7 +527,7 @@ describe('mirror', () => {
 		// Add a tag to the local support thread
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['support-thread@1.0.0'],
 			{
 				attachEvents: true,
@@ -538,7 +542,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Check that the remote topic has the new tag
 		const mirrorId: string = (supportThread.data as any).mirrors[0];
@@ -565,7 +569,7 @@ describe('mirror', () => {
 		// Add a new top-level tag
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['support-thread@1.0.0'],
 			{
 				attachEvents: true,
@@ -580,7 +584,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Wait to make sure no syncing happens
 		await new Promise((resolve) => {
@@ -607,7 +611,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const whisper = await ctx.createWhisper(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -667,7 +671,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const whisper = await ctx.createWhisper(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -696,7 +700,7 @@ describe('mirror', () => {
 		const newContent = autumndbTestUtils.generateRandomId();
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['whisper@1.0.0'],
 			{
 				attachEvents: true,
@@ -711,7 +715,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Get last post from remote topic
 		const postNumber = parseInt(
@@ -746,7 +750,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const message = await ctx.createMessage(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -806,7 +810,7 @@ describe('mirror', () => {
 		const content = autumndbTestUtils.generateRandomId();
 		const message = await ctx.createMessage(
 			user.id,
-			session.id,
+			session,
 			supportThread,
 			content,
 		);
@@ -835,7 +839,7 @@ describe('mirror', () => {
 		const newContent = autumndbTestUtils.generateRandomId();
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['message@1.0.0'],
 			{
 				attachEvents: true,
@@ -850,7 +854,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Get last post from remote topic
 		const postNumber = parseInt(
@@ -885,7 +889,7 @@ describe('mirror', () => {
 		const newTitle = autumndbTestUtils.generateRandomId();
 		await ctx.worker.patchCard(
 			ctx.logContext,
-			session.id,
+			session,
 			ctx.worker.typeContracts['support-thread@1.0.0'],
 			{
 				attachEvents: true,
@@ -900,7 +904,7 @@ describe('mirror', () => {
 				},
 			],
 		);
-		await ctx.flushAll(session.id);
+		await ctx.flushAll(session);
 
 		// Confirm that the remote topic's title has changed
 		const mirrorId: string = (supportThread.data as any).mirrors[0];
