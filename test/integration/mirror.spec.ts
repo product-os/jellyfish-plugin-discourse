@@ -1,8 +1,5 @@
 import { defaultEnvironment } from '@balena/jellyfish-environment';
-import {
-	defaultPlugin,
-	testUtils as pluginDefaultTestUtils,
-} from '@balena/jellyfish-plugin-default';
+import { testUtils as workerTestUtils } from '@balena/jellyfish-worker';
 import { strict as assert } from 'assert';
 import { testUtils as autumndbTestUtils } from 'autumndb';
 import Bluebird from 'bluebird';
@@ -13,13 +10,13 @@ import { discoursePlugin } from '../../lib';
 const TOKEN = defaultEnvironment.integration.discourse;
 const { category } = defaultEnvironment.test.integration.discourse;
 
-let ctx: pluginDefaultTestUtils.TestContext;
+let ctx: workerTestUtils.TestContext;
 let user: any = {};
 let session: any = {};
 
 beforeAll(async () => {
-	ctx = await pluginDefaultTestUtils.newContext({
-		plugins: [defaultPlugin(), discoursePlugin()],
+	ctx = await workerTestUtils.newContext({
+		plugins: [discoursePlugin()],
 	});
 
 	// Standard user
@@ -30,7 +27,7 @@ beforeAll(async () => {
 });
 
 afterAll(() => {
-	return pluginDefaultTestUtils.destroyContext(ctx);
+	return workerTestUtils.destroyContext(ctx);
 });
 
 const setUser = async (username: string) => {
