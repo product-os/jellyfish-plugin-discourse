@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.1 - 2022-07-22
+
+* Update autumndb from 21.0.0 to 21.1.3 [renovate[bot]]
+
 ## 6.0.0 - 2022-07-19
 
 * Upgrade to worker v32.x and AutumnDB v21.x This brings in a major change to how AutumnDB handles sessions. [Lucian Buzzo]
