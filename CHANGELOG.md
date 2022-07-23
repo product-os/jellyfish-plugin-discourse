@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.3 - 2022-07-23
+
+* CI: Disable redis persistence [Josh Bowling]
+
 ## 6.0.2 - 2022-07-23
 
 * Update @balena/jellyfish-environment from 12.2.0 to 12.3.0 [renovate[bot]]
