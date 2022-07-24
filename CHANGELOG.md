@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.4 - 2022-07-24
+
+* Update repo.yml [Josh Bowling]
+
 ## 6.0.3 - 2022-07-23
 
 * CI: Disable redis persistence [Josh Bowling]
