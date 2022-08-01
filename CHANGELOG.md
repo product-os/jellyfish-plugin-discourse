@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.12 - 2022-08-01
+
+* Update LRU init [Josh Bowling]
+* Update external-major (external major bumps) [renovate[bot]]
+
 ## 6.0.11 - 2022-07-31
 
 * Update @balena/jellyfish-assert from 1.2.39 to 1.2.49 [renovate[bot]]
