@@ -21,8 +21,11 @@ const CATEGORIES = {};
 /*
  * Discourse user cache, for rate limiting purposes.
  */
-const DISCOURSE_USER_CACHE = new LRU(200);
-const DISCOURSE_USER_EMAIL_CACHE = new LRU(200);
+const lruOptions = {
+	max: 200,
+};
+const DISCOURSE_USER_CACHE = new LRU(lruOptions);
+const DISCOURSE_USER_EMAIL_CACHE = new LRU(lruOptions);
 
 const SLUG = 'discourse';
 

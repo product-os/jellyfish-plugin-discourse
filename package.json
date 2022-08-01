@@ -51,7 +51,7 @@
     "autumndb": "^21.2.0",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.21",
-    "lru-cache": "^6.0.0"
+    "lru-cache": "^7.13.1"
   },
   "devDependencies": {
     "@balena/jellyfish-environment": "^12.3.1",
@@ -59,7 +59,7 @@
     "@types/bluebird": "^3.5.36",
     "@types/jest": "^28.1.2",
     "@types/lodash": "^4.14.182",
-    "@types/lru-cache": "^5.1.1",
+    "@types/lru-cache": "^7.10.9",
     "@types/uuid": "^8.3.4",
     "axios": "^0.27.2",
     "deplint": "^1.1.3",
