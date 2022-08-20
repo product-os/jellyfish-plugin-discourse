@@ -4,6 +4,11 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.27 - 2022-08-20
+
+* Update @types/lodash from 4.14.182 to 4.14.184 [renovate[bot]]
+* Update autumndb from 21.3.15 to 22.1.14 [renovate[bot]]
+
 ## 6.0.26 - 2022-08-18
 
 * Update @balena/jellyfish-environment from 12.3.6 to 13.0.1 [renovate[bot]]
