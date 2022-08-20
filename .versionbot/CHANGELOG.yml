@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-assert from 1.2.51 to 1.2.53
+      hash: 007030f06c35b55daa11f43f4f8af7cb5cbcf6d5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.28
+  title: "'Update @balena/jellyfish-assert from 1.2.51 to 1.2.53'"
+  date: 2022-08-20T01:33:45.015Z
+- commits:
     - subject: Update @types/lodash from 4.14.182 to 4.14.184
       hash: 7181fa09bf69a98f837fa9528d0e54534ed6becf
       body: ""
