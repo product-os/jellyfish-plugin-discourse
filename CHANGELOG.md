@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.30 - 2022-08-20
+
+* Update jest monorepo [renovate[bot]]
+
 ## 6.0.29 - 2022-08-20
 
 * Update @balena/jellyfish-environment from 13.0.1 to 13.0.3 [renovate[bot]]
