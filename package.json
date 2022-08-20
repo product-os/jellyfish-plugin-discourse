@@ -54,7 +54,7 @@
     "lru-cache": "^7.13.1"
   },
   "devDependencies": {
-    "@balena/jellyfish-environment": "^13.0.1",
+    "@balena/jellyfish-environment": "^13.0.3",
     "@balena/lint": "^6.2.0",
     "@types/bluebird": "^3.5.36",
     "@types/jest": "^28.1.2",
