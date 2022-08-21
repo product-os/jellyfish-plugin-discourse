@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.36 - 2022-08-21
+
+* Update nock from 13.2.7 to 13.2.9 [renovate[bot]]
+
 ## 6.0.35 - 2022-08-21
 
 * Update lint-staged from 13.0.2 to 13.0.3 [renovate[bot]]
