@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update ts-jest from 28.0.5 to 28.0.8
+      hash: 068f604c37b77ad9ead0363471e6665081fb7156
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.37
+  title: "'Update ts-jest from 28.0.5 to 28.0.8'"
+  date: 2022-08-21T07:39:59.688Z
+- commits:
     - subject: Update nock from 13.2.7 to 13.2.9
       hash: e426b11f67ac36e5db76229edd0f2a30f0bca7e5
       body: ""
