@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.38 - 2022-08-22
+
+* Update lru-cache from 7.13.1 to 7.14.0 [renovate[bot]]
+
 ## 6.0.37 - 2022-08-21
 
 * Update ts-jest from 28.0.5 to 28.0.8 [renovate[bot]]

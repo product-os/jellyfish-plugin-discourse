@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update lru-cache from 7.13.1 to 7.14.0
+      hash: 211579ef6a870607bc9f631c8c66c070ae61d5f3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.38
+  title: "'Update lru-cache from 7.13.1 to 7.14.0'"
+  date: 2022-08-22T09:25:06.851Z
+- commits:
     - subject: Update ts-jest from 28.0.5 to 28.0.8
       hash: 068f604c37b77ad9ead0363471e6665081fb7156
       body: ""
