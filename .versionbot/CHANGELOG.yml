@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-worker from 33.0.23 to 33.0.30
+      hash: 57d827cc43cad5e45a6db86c87ce75911cd2f85b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.39
+  title: "'Update @balena/jellyfish-worker from 33.0.23 to 33.0.30'"
+  date: 2022-08-22T10:14:49.085Z
+- commits:
     - subject: Update lru-cache from 7.13.1 to 7.14.0
       hash: 211579ef6a870607bc9f631c8c66c070ae61d5f3
       body: ""
