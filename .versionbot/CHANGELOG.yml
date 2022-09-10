@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update secrets submodule
+      hash: 2f585c28dbe6309048f0fe9307adec2491bf8517
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+    - subject: Bump external packages
+      hash: 15ed81f943c34e00019cd275e2c9714668d54dbe
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.48
+  title: "'Bump external packages'"
+  date: 2022-09-10T04:43:42.805Z
+- commits:
     - subject: Update @balena/jellyfish-worker from 33.0.37 to 33.0.38
       hash: c66ba443aa1c0928e7b910153a38322fd1c5937b
       body: ""
