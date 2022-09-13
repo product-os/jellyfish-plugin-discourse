@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.61 - 2022-09-13
+
+* CI: Move to Flowzone [Josh Bowling]
+
 ## 6.0.60 - 2022-09-12
 
 * Update autumndb from 22.2.35 to 22.2.38 [renovate[bot]]
