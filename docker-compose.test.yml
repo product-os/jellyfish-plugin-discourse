@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3'
 
 services:
   sut:
@@ -9,16 +9,9 @@ services:
     depends_on:
       - postgres
       - redis
+    env_file:
+      - .env
     environment:
       - LOGLEVEL=error
-    secrets:
-      - integration_discourse_token
-      - integration_discourse_username
     networks:
       - internal
-
-secrets:
-  integration_discourse_token:
-    file: ./.balena/secrets/integration_discourse_token
-  integration_discourse_username:
-    file: ./.balena/secrets/integration_discourse_username
