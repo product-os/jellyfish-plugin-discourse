@@ -7,13 +7,11 @@ Provides a sync integration for Discourse.
 Below is an example how to use this library:
 
 ```typescript
-import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { discoursePlugin } from '@balena/jellyfish-plugin-discourse';
-import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { PluginManager } from '@balena/jellyfish-worker';
 
 // Load contracts from this plugin
-const pluginManager = new PluginManager([defaultPlugin(), productOsPlugin(), discoursePlugin()]);
+const pluginManager = new PluginManager([discoursePlugin()]);
 const contracts = pluginManager.getCards();
 console.dir(contracts);
 ```
