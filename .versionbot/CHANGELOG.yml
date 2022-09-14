@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update readme example
+      hash: afc664d3a13dba8be1bbfa7ecbd11c4163ee540e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.62
+  title: ""
+  date: 2022-09-14T00:16:38.303Z
+- commits:
     - subject: "CI: Move to Flowzone"
       hash: a3824c666fab5c63cdbcb3354bb44bac35e6f6e9
       body: ""
