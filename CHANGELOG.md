@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.79 - 2022-09-18
+
+* Update secrets submodule [Josh Bowling]
+
 ## 6.0.78 - 2022-09-17
 
 * Update autumndb from 22.2.45 to 22.2.52 [renovate[bot]]

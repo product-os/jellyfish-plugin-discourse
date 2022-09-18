@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update secrets submodule
+      hash: 973581220add1d1cb81eaee4ddc377b6dae1fae7
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.79
+  title: ""
+  date: 2022-09-18T11:06:49.467Z
+- commits:
     - subject: Update autumndb from 22.2.45 to 22.2.52
       hash: 9128849c00e1e13b98081409f71e4467edf4eab0
       body: ""
