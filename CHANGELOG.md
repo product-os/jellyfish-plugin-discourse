@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.83 - 2022-09-18
+
+* Update @balena/jellyfish-worker from 33.4.53 to 33.4.54 [renovate[bot]]
+
 ## 6.0.82 - 2022-09-18
 
 * Drop test:compose script, update compose version [Josh Bowling]
