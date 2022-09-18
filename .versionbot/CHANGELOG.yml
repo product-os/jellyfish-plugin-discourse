@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update ts-jest from 29.0.0 to 29.0.1
+      hash: b721f2dcb5a29b1d0c7e4a7b72e015e76e3c6571
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.80
+  title: ""
+  date: 2022-09-18T11:58:42.861Z
+- commits:
     - subject: Update secrets submodule
       hash: 973581220add1d1cb81eaee4ddc377b6dae1fae7
       body: ""

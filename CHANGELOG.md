@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.80 - 2022-09-18
+
+* Update ts-jest from 29.0.0 to 29.0.1 [renovate[bot]]
+
 ## 6.0.79 - 2022-09-18
 
 * Update secrets submodule [Josh Bowling]
