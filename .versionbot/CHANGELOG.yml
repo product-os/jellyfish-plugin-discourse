@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.23.14 to 0.23.15
+      hash: 4d0eb7ec69588e1dd1aa66bc3d629dcf481a2bfd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.97
+  title: ""
+  date: 2022-09-20T18:13:52.887Z
+- commits:
     - subject: Update autumndb from 22.2.52 to 22.2.73
       hash: e2600c7f6c948cce0c5f31e5e4d32521c47c07cc
       body: ""
