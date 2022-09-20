@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.92 - 2022-09-20
+
+* Add CodeQL workflow [Josh Bowling]
+
 ## 6.0.91 - 2022-09-20
 
 * Dev: Add .nvmrc [Josh Bowling]
