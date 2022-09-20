@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Dev: Add .nvmrc"
+      hash: d64c99aea1519d8b2fbc83f0af51c72f1b67de61
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.91
+  title: ""
+  date: 2022-09-20T04:46:41.840Z
+- commits:
     - subject: Update @balena/jellyfish-assert from 1.2.70 to 1.2.73
       hash: 15472057b71b08328e8641de6784760b09b84de8
       body: ""
