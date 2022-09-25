@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.107 - 2022-09-25
+
+* Update @types/bluebird from 3.5.36 to 3.5.37 [renovate[bot]]
+
 ## 6.0.106 - 2022-09-24
 
 * Update @balena/jellyfish-worker from 34.1.20 to 34.1.24 [renovate[bot]]
