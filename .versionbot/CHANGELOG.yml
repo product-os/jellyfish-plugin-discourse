@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update ts-jest from 29.0.1 to 29.0.2
+      hash: ce1e07ee3e914b26829b3bcfab8e3bc0805dadc5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.110
+  title: ""
+  date: 2022-09-27T16:23:09.308Z
+- commits:
     - subject: Rely on flowzone for docs publishing
       hash: fc67db38c055a7dc9028be093b7b99a4ead1c9b6
       body: ""
