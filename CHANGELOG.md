@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.109 - 2022-09-27
+
+* Rely on flowzone for docs publishing [Page-]
+
 ## 6.0.108 - 2022-09-25
 
 * Update autumndb from 22.2.73 to 22.2.85 [renovate[bot]]
