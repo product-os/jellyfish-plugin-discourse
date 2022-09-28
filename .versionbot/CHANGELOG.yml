@@ -1,4 +1,16 @@
 - commits:
+    - subject: Change engines to >=16 to enable node 18 tests/usage
+      hash: 840cdd005149c911de6914a54c3462793901e4d1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Page-
+      nested: []
+  version: 6.0.119
+  title: ""
+  date: 2022-09-28T20:07:57.973Z
+- commits:
     - subject: Update autumndb from 22.2.98 to 22.2.99
       hash: 14a4b034de247dc02bdeb1c26e4165dc493602c9
       body: ""

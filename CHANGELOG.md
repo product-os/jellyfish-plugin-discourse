@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.119 - 2022-09-28
+
+* Change engines to >=16 to enable node 18 tests/usage [Page-]
+
 ## 6.0.118 - 2022-09-28
 
 * Update autumndb from 22.2.98 to 22.2.99 [renovate[bot]]
