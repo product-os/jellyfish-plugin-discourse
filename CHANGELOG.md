@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.128 - 2022-10-01
+
+* Update autumndb from 22.2.99 to 22.2.106 [renovate[bot]]
+
 ## 6.0.127 - 2022-10-01
 
 * Update @types/lodash from 4.14.185 to 4.14.186 [renovate[bot]]
