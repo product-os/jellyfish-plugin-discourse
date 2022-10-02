@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.136 - 2022-10-02
+
+* Update jest monorepo [renovate[bot]]
+
 ## 6.0.135 - 2022-10-02
 
 * Update typescript from 4.8.3 to 4.8.4 [renovate[bot]]
