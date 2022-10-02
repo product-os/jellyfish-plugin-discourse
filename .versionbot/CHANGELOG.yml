@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typescript from 4.8.3 to 4.8.4
+      hash: f76bd8f6e9e7c27b967d0039238a0364395068a3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.135
+  title: ""
+  date: 2022-10-02T10:56:15.480Z
+- commits:
     - subject: Update @balena/jellyfish-worker from 34.1.57 to 34.1.58
       hash: 931c93f2ac4f23deb53a677f7c120a9a805f0b9d
       body: ""
