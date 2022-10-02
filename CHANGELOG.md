@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.130 - 2022-10-02
+
+* Update autumndb from 22.2.106 to 22.2.114 [renovate[bot]]
+
 ## 6.0.129 - 2022-10-01
 
 * Update ts-jest from 29.0.2 to 29.0.3 [renovate[bot]]
