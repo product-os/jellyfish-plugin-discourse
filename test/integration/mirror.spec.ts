@@ -8,6 +8,7 @@ import {
 } from 'autumndb';
 import Bluebird from 'bluebird';
 import _ from 'lodash';
+import nock from 'nock';
 import request from 'request';
 import { discoursePlugin } from '../../lib';
 
@@ -28,6 +29,10 @@ beforeAll(async () => {
 	await ctx.createUser(
 		defaultEnvironment.test.integration.discourse.nonModeratorUsername,
 	);
+});
+
+afterEach(() => {
+	nock.cleanAll();
 });
 
 afterAll(() => {
@@ -75,6 +80,7 @@ const deleteTopic = async (id: string) => {
 					);
 				}
 
+				console.log('deleteTopic.body:', body);
 				return resolve();
 			},
 		);
@@ -115,6 +121,7 @@ const getTopic = async (id: string) => {
 					);
 				}
 
+				console.log('getTopic.body:', body);
 				return resolve(body);
 			},
 		);
@@ -162,6 +169,7 @@ const createPost = async (
 					);
 				}
 
+				console.log('createPost.body:', body);
 				return resolve(body);
 			},
 		);
@@ -188,7 +196,58 @@ const startSupportThread = async (username: string) => {
 };
 
 describe('mirror', () => {
-	it('should send, but not sync, a whisper to a deleted thread', async () => {
+	it.only('should send, but not sync, a whisper to a deleted thread', async () => {
+		nock('https://forums.balena.io')
+			.persist()
+			.get('/users/jellyfish.json')
+			.reply(200, {
+				user: {
+					id: 1,
+					username: 'jellyfish',
+				},
+			});
+		nock('https://forums.balena.io')
+			.persist()
+			.get('/u/jellyfish/emails.json')
+			.reply(200, {
+				email: 'jellyfish@balena.io',
+			});
+
+		nock('https://forums.balena.io').persist().post('/posts.json').reply(200, {
+			topic_id: 123,
+		});
+		nock('https://forums.balena.io').delete('/t/123.json').reply(200, {});
+		nock('https://forums.balena.io')
+			.get('/t/123.json?include_raw=1')
+			.reply(200, {
+				post_stream: {
+					posts: [],
+				},
+			});
+		nock('https://forums.balena.io')
+			.persist()
+			.get('/t/123.json')
+			.reply(200, {
+				post_stream: {
+					posts: [],
+				},
+			});
+		nock('https://forums.balena.io')
+			.persist()
+			.get('/t/123')
+			.reply(200, {
+				post_stream: {
+					posts: [],
+				},
+			});
+		nock('https://forums.balena.io')
+			.put('/t/-/123.json')
+			.reply(200, {
+				post_stream: {
+					posts: [],
+				},
+			});
+
 		await setUser(defaultEnvironment.integration.discourse.username);
 
 		// Create a Discourse thread and tie it to a support thread
