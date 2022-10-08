@@ -146,17 +146,9 @@
         "raw": "My whisper"
       }
     ],
-    "stream": [
-      34112,
-      34113
-    ]
+    "stream": [34112, 34113]
   },
-  "timeline_lookup": [
-    [
-      1,
-      4
-    ]
-  ],
+  "timeline_lookup": [[1, 4]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -183,10 +175,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,

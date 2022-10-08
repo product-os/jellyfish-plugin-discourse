@@ -121,16 +121,9 @@
         "raw": "Device Type:\nOS version:\nSupervisor Version:"
       }
     ],
-    "stream": [
-      35734
-    ]
+    "stream": [35734]
   },
-  "timeline_lookup": [
-    [
-      1,
-      0
-    ]
-  ],
+  "timeline_lookup": [[1, 0]],
   "suggested_topics": [
     {
       "id": 6480,
@@ -290,10 +283,7 @@
       "archived": false,
       "bookmarked": null,
       "liked": null,
-      "tags": [
-        "support",
-        "raspberrypi3"
-      ],
+      "tags": ["support", "raspberrypi3"],
       "archetype": "regular",
       "like_count": 0,
       "views": 5,
@@ -334,9 +324,7 @@
       "archived": false,
       "bookmarked": null,
       "liked": null,
-      "tags": [
-        "summary"
-      ],
+      "tags": ["summary"],
       "archetype": "regular",
       "like_count": 0,
       "views": 28,

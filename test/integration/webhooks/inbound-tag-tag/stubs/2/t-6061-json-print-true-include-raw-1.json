@@ -70,16 +70,9 @@
         "raw": "Tag tag test 1234567"
       }
     ],
-    "stream": [
-      33998
-    ]
+    "stream": [33998]
   },
-  "timeline_lookup": [
-    [
-      1,
-      5
-    ]
-  ],
+  "timeline_lookup": [[1, 5]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -106,10 +99,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,

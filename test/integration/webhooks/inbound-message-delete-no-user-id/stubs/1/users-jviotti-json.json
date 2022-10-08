@@ -547,11 +547,7 @@
         "owner": false
       }
     ],
-    "featured_user_badge_ids": [
-      373,
-      5797,
-      6770
-    ],
+    "featured_user_badge_ids": [373, 5797, 6770],
     "user_option": {
       "user_id": 4,
       "mailing_list_mode": false,
@@ -572,9 +568,7 @@
       "email_in_reply_to": true,
       "like_notification_frequency": 1,
       "include_tl0_in_digests": false,
-      "theme_ids": [
-        4
-      ],
+      "theme_ids": [4],
       "theme_key_seq": 0,
       "allow_private_messages": true,
       "homepage_id": null,

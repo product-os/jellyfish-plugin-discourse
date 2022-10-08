@@ -146,17 +146,9 @@
         "raw": "My image\n\n![46|690x431](upload://2qAvUBRQMYZk8JUlNa5v0rtAEwH.png)"
       }
     ],
-    "stream": [
-      34020,
-      34021
-    ]
+    "stream": [34020, 34021]
   },
-  "timeline_lookup": [
-    [
-      1,
-      5
-    ]
-  ],
+  "timeline_lookup": [[1, 5]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -183,10 +175,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,

@@ -70,16 +70,9 @@
         "raw": "777777777777777777777777777"
       }
     ],
-    "stream": [
-      34045
-    ]
+    "stream": [34045]
   },
-  "timeline_lookup": [
-    [
-      1,
-      5
-    ]
-  ],
+  "timeline_lookup": [[1, 5]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -106,10 +99,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,
@@ -450,10 +440,7 @@
       ]
     }
   ],
-  "tags": [
-    "support",
-    "docker"
-  ],
+  "tags": ["support", "docker"],
   "id": 6085,
   "title": "Conversation with multiple tags",
   "fancy_title": "Conversation with multiple tags",

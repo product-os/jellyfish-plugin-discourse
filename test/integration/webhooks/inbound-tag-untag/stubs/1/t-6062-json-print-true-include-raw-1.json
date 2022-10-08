@@ -70,16 +70,9 @@
         "raw": "Foo bar baz 12345678"
       }
     ],
-    "stream": [
-      33999
-    ]
+    "stream": [33999]
   },
-  "timeline_lookup": [
-    [
-      1,
-      5
-    ]
-  ],
+  "timeline_lookup": [[1, 5]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -106,10 +99,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,

@@ -15,9 +15,7 @@
   },
   "payload": {
     "topic": {
-      "tags": [
-        "wifi"
-      ],
+      "tags": ["wifi"],
       "id": 6084,
       "title": "Conversation with a tag",
       "fancy_title": "Conversation with a tag",

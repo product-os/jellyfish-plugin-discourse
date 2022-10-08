@@ -70,16 +70,9 @@
         "raw": "Updated description 8888"
       }
     ],
-    "stream": [
-      34103
-    ]
+    "stream": [34103]
   },
-  "timeline_lookup": [
-    [
-      1,
-      4
-    ]
-  ],
+  "timeline_lookup": [[1, 4]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -106,10 +99,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,

@@ -84,16 +84,9 @@
         "raw": "Foo Bar :grinning: baz :sweat_smile:"
       }
     ],
-    "stream": [
-      36125
-    ]
+    "stream": [36125]
   },
-  "timeline_lookup": [
-    [
-      1,
-      0
-    ]
-  ],
+  "timeline_lookup": [[1, 0]],
   "tags": [],
   "id": 6895,
   "title": "Topic example with emojis",

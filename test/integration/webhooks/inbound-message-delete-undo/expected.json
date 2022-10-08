@@ -12,9 +12,7 @@
       "environment": "production",
       "tags": [],
       "inbox": "Sandbox",
-      "mirrors": [
-        "https://forums.balena.io/t/6072"
-      ],
+      "mirrors": ["https://forums.balena.io/t/6072"],
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
@@ -50,9 +48,7 @@
             "environment": "production",
             "tags": [],
             "inbox": "Sandbox",
-            "mirrors": [
-              "https://forums.balena.io/t/6072"
-            ],
+            "mirrors": ["https://forums.balena.io/t/6072"],
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
@@ -75,9 +71,7 @@
           "active": true,
           "slug": "user-jviotti"
         },
-        "mirrors": [
-          "https://forums.balena.io/t/6072/1"
-        ],
+        "mirrors": ["https://forums.balena.io/t/6072/1"],
         "timestamp": "2019-04-16T15:39:50.437Z",
         "payload": {
           "mentionsUser": [],
@@ -103,9 +97,7 @@
           "active": true,
           "slug": "user-jviotti"
         },
-        "mirrors": [
-          "https://forums.balena.io/t/6072/2"
-        ],
+        "mirrors": ["https://forums.balena.io/t/6072/2"],
         "timestamp": "2019-04-16T15:39:57.872Z",
         "payload": {
           "mentionsUser": [],

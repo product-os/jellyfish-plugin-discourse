@@ -12,9 +12,7 @@
       "environment": "production",
       "tags": [],
       "inbox": "Sandbox",
-      "mirrors": [
-        "https://forums.balena.io/t/6060"
-      ],
+      "mirrors": ["https://forums.balena.io/t/6060"],
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
@@ -50,9 +48,7 @@
             "environment": "production",
             "tags": [],
             "inbox": "Sandbox",
-            "mirrors": [
-              "https://forums.balena.io/t/6060"
-            ],
+            "mirrors": ["https://forums.balena.io/t/6060"],
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
@@ -75,9 +71,7 @@
           "active": true,
           "slug": "user-jviotti"
         },
-        "mirrors": [
-          "https://forums.balena.io/t/6060/1"
-        ],
+        "mirrors": ["https://forums.balena.io/t/6060/1"],
         "timestamp": "2019-04-16T15:21:35.940Z",
         "payload": {
           "mentionsUser": [],

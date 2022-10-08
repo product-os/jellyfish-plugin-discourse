@@ -15,10 +15,7 @@
   },
   "payload": {
     "topic": {
-      "tags": [
-        "raspberrypi3",
-        "docker"
-      ],
+      "tags": ["raspberrypi3", "docker"],
       "id": 6061,
       "title": "Inbound tag tag",
       "fancy_title": "Inbound tag tag",
