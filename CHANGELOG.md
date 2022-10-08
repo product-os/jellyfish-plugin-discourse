@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.155 - 2022-10-08
+
+* Dev: Use prettier for json/yml [Josh Bowling]
+
 ## 6.0.154 - 2022-10-07
 
 * Update @balena/jellyfish-environment from 14.3.1 to 14.3.2 [renovate[bot]]
