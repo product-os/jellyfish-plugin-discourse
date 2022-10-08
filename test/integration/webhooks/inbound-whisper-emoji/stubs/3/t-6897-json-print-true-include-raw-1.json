@@ -154,17 +154,9 @@
         "raw": "Emoji whisper :smiley:"
       }
     ],
-    "stream": [
-      36127,
-      36128
-    ]
+    "stream": [36127, 36128]
   },
-  "timeline_lookup": [
-    [
-      1,
-      0
-    ]
-  ],
+  "timeline_lookup": [[1, 0]],
   "suggested_topics": [
     {
       "id": 6784,

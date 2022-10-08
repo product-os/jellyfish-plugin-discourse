@@ -15,9 +15,7 @@
   },
   "payload": {
     "topic": {
-      "tags": [
-        "raspberrypi3"
-      ],
+      "tags": ["raspberrypi3"],
       "id": 6062,
       "title": "Inbound tag untag test",
       "fancy_title": "Inbound tag untag test",

@@ -10,14 +10,9 @@
     "capabilities": [],
     "data": {
       "environment": "production",
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "inbox": "Sandbox",
-      "mirrors": [
-        "https://forums.balena.io/t/6085"
-      ],
+      "mirrors": ["https://forums.balena.io/t/6085"],
       "mentionsUser": [],
       "alertsUser": [],
       "description": "",
@@ -51,14 +46,9 @@
           "capabilities": [],
           "data": {
             "environment": "production",
-            "tags": [
-              "support",
-              "docker"
-            ],
+            "tags": ["support", "docker"],
             "inbox": "Sandbox",
-            "mirrors": [
-              "https://forums.balena.io/t/6085"
-            ],
+            "mirrors": ["https://forums.balena.io/t/6085"],
             "mentionsUser": [],
             "alertsUser": [],
             "description": "",
@@ -81,9 +71,7 @@
           "active": true,
           "slug": "user-jviotti"
         },
-        "mirrors": [
-          "https://forums.balena.io/t/6085/1"
-        ],
+        "mirrors": ["https://forums.balena.io/t/6085/1"],
         "timestamp": "2019-04-16T18:10:47.680Z",
         "payload": {
           "mentionsUser": [],

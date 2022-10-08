@@ -146,17 +146,9 @@
         "raw": "My file attachment[pcasm-book.pdf|attachment](upload://2uB5SFjOWt1LwPVZ2gqNTa4261n.pdf) (1.0 MB)"
       }
     ],
-    "stream": [
-      34022,
-      34023
-    ]
+    "stream": [34022, 34023]
   },
-  "timeline_lookup": [
-    [
-      1,
-      5
-    ]
-  ],
+  "timeline_lookup": [[1, 5]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -183,10 +175,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,

@@ -163,17 +163,9 @@
         "raw": "Test with preview\n\nhttps://forums.balena.io/t/my-issue-76c3d3a9-c85c-4805-95ae-94bee4150b31/6949"
       }
     ],
-    "stream": [
-      36301,
-      36302
-    ]
+    "stream": [36301, 36302]
   },
-  "timeline_lookup": [
-    [
-      1,
-      0
-    ]
-  ],
+  "timeline_lookup": [[1, 0]],
   "suggested_topics": [
     {
       "id": 6935,

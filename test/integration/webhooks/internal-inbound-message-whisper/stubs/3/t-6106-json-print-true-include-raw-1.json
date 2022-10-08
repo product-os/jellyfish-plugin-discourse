@@ -138,18 +138,9 @@
         "raw": "My message"
       }
     ],
-    "stream": [
-      34106,
-      34107,
-      34108
-    ]
+    "stream": [34106, 34107, 34108]
   },
-  "timeline_lookup": [
-    [
-      1,
-      4
-    ]
-  ],
+  "timeline_lookup": [[1, 4]],
   "suggested_topics": [
     {
       "id": 6042,
@@ -176,10 +167,7 @@
       "notification_level": 3,
       "bookmarked": false,
       "liked": false,
-      "tags": [
-        "support",
-        "docker"
-      ],
+      "tags": ["support", "docker"],
       "archetype": "regular",
       "like_count": 0,
       "views": 2,
