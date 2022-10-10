@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.168 - 2022-10-10
+
+* Update @balena/jellyfish-worker from 35.0.21 to 35.0.31 [renovate[bot]]
+
 ## 6.0.167 - 2022-10-10
 
 * CI: Use JSON for Jest config [Josh Bowling]
