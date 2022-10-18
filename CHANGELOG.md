@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.180 - 2022-10-18
+
+* Update @balena/jellyfish-worker from 35.0.59 to 35.0.60 [renovate[bot]]
+
 ## 6.0.179 - 2022-10-18
 
 * Update @balena/jellyfish-worker from 35.0.58 to 35.0.59 [renovate[bot]]
