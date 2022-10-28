@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.202 - 2022-10-28
+
+* Update @balena/jellyfish-assert from 1.2.90 to 1.2.93 [renovate[bot]]
+
 ## 6.0.201 - 2022-10-24
 
 * Docs: Remove badge from readme [Josh Bowling]
