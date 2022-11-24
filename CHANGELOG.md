@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.207 - 2022-11-24
+
+* Update autumndb from 22.2.170 to 22.2.172 [renovate[bot]]
+
 ## 6.0.206 - 2022-11-24
 
 * Update @balena/lint from 6.2.0 to 6.2.1 [renovate[bot]]
