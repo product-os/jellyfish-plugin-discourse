@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.205 - 2022-11-24
+
+* Update @balena/jellyfish-assert from 1.2.93 to 1.2.103 [renovate[bot]]
+
 ## 6.0.204 - 2022-11-24
 
 * Update autumndb from 22.2.158 to 22.2.170 [renovate[bot]]
