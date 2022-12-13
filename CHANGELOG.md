@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.0.222 - 2022-12-13
+
+* CI: Stop extending renovate config [Josh Bowling]
+
 ## 6.0.221 - 2022-11-26
 
 * Update @balena/jellyfish-worker from 37.1.24 to 37.1.26 [renovate[bot]]
