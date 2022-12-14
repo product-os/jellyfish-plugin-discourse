@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.1.0 - 2022-12-14
+
+* Update Node.js to 18.12.1 [Renovate Bot]
+
 ## 6.0.222 - 2022-12-13
 
 * CI: Stop extending renovate config [Josh Bowling]
