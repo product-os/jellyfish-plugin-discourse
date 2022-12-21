@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 6.2.0 - 2022-12-21
+
+* Pin dependencies [Renovate Bot]
+
 ## 6.1.0 - 2022-12-14
 
 * Update Node.js to 18.12.1 [Renovate Bot]
