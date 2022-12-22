@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update dependency axios to 1.2.1
+      hash: b59b697907182a45b71a2c6375422ab65de495af
+      body: |
+        Update axios to 1.2.1
+
+        Update axios from 0.27.2 to 1.2.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 6.3.1
+  title: ""
+  date: 2022-12-22T02:08:26.295Z
+- commits:
     - subject: Update Node.js to v19
       hash: 319b9092979404f7dac82cc7151f7ccdd0cafd60
       body: |
