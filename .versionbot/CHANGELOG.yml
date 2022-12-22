@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update dependency uuid to 9.0.0
+      hash: 32fc2c98bca71c2976ab170f34bf9c9137763299
+      body: |
+        Update uuid to 9.0.0
+
+        Update uuid from 8.3.2 to 9.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 6.3.1
+  title: ""
+  date: 2022-12-22T02:08:29.214Z
+- commits:
     - subject: Update Node.js to v19
       hash: 319b9092979404f7dac82cc7151f7ccdd0cafd60
       body: |
