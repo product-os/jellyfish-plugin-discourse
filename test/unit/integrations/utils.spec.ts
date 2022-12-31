@@ -1,20 +1,20 @@
-import { v4 as uuidv4 } from 'uuid';
+import { randomUUID } from 'node:crypto';
 import * as utils from '../../../lib/integrations/utils';
 
 describe('attachCards()', () => {
 	test('should return a link card', () => {
 		const fromCard = {
-			id: uuidv4(),
-			slug: `foo-${uuidv4()}`,
+			id: randomUUID(),
+			slug: `foo-${randomUUID()}`,
 			type: 'foo@1.0.0',
 		};
 		const toCard = {
-			id: uuidv4(),
-			slug: `bar-${uuidv4()}`,
+			id: randomUUID(),
+			slug: `bar-${randomUUID()}`,
 			type: 'bar@1.0.0',
 		};
 		const options = {
-			actor: uuidv4(),
+			actor: randomUUID(),
 		};
 		const result = utils.attachCards(new Date(), fromCard, toCard, options);
 		expect(result.actor).toEqual(options.actor);
@@ -46,26 +46,26 @@ describe('postEvent()', () => {
 	test('should return an array of expected objects', () => {
 		const sequence = [
 			{
-				id: uuidv4(),
-				slug: `card-${uuidv4()}`,
+				id: randomUUID(),
+				slug: `card-${randomUUID()}`,
 				type: 'card@1.0.0',
 			},
 		];
 		const eventCard = {
-			id: uuidv4(),
-			slug: `event-${uuidv4()}`,
+			id: randomUUID(),
+			slug: `event-${randomUUID()}`,
 			type: 'event@1.0.0',
 			data: {
 				timestamp: new Date().getTime(),
 			},
 		};
 		const targetCard = {
-			id: uuidv4(),
-			slug: `target-${uuidv4()}`,
+			id: randomUUID(),
+			slug: `target-${randomUUID()}`,
 			type: 'target@1.0.0',
 		};
 		const options = {
-			actor: uuidv4(),
+			actor: randomUUID(),
 		};
 		const result = utils.postEvent(sequence, eventCard, targetCard, options);
 
