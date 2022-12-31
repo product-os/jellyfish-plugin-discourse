@@ -1,4 +1,16 @@
 - commits:
+    - subject: Drop uuid
+      hash: a68782511996cae4d94b57a4ee6a02cf95d4d643
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.3.1
+  title: ""
+  date: 2022-12-31T13:50:39.794Z
+- commits:
     - subject: Update Node.js to v19
       hash: 319b9092979404f7dac82cc7151f7ccdd0cafd60
       body: |
