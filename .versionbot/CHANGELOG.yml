@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update deps
+      hash: c88dd8c2b5ed0976ecc37697d25906fdcc9d2394
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.3.1
+  title: ""
+  date: 2023-04-02T12:39:37.690Z
+- commits:
     - subject: Update Node.js to v19
       hash: 319b9092979404f7dac82cc7151f7ccdd0cafd60
       body: |
