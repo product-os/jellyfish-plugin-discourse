@@ -78,8 +78,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Foo Bar Baz xxxxxxxxx",
-          "reactions": {}
+          "message": "Foo Bar Baz xxxxxxxxx"
         },
         "integration_source": "discourse"
       }
@@ -104,8 +103,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Test with preview\n\nhttps://forums.balena.io/t/my-issue-76c3d3a9-c85c-4805-95ae-94bee4150b31/6949",
-          "reactions": {}
+          "message": "Test with preview\n\nhttps://forums.balena.io/t/my-issue-76c3d3a9-c85c-4805-95ae-94bee4150b31/6949"
         },
         "integration_source": "discourse"
       }

@@ -78,8 +78,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Test test test 123456789",
-          "reactions": {}
+          "message": "Test test test 123456789"
         },
         "integration_source": "discourse"
       }
@@ -104,8 +103,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Edit reply",
-          "reactions": {}
+          "message": "Edit reply"
         },
         "integration_source": "discourse"
       }

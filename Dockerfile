@@ -9,4 +9,4 @@ RUN npm install
 
 COPY . ./
 
-CMD /bin/bash -c "scripts/run-ci-tasks.sh"
+CMD /bin/bash -c "scripts/test-integration.sh"

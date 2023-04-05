@@ -78,8 +78,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Tag tag test 1234567",
-          "reactions": {}
+          "message": "Tag tag test 1234567"
         },
         "integration_source": "discourse"
       }
