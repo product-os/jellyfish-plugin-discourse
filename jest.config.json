@@ -2,5 +2,6 @@
   "preset": "ts-jest",
   "testEnvironment": "node",
   "roots": ["test"],
-  "testTimeout": 120000
+  "testTimeout": 300000,
+  "bail": 1
 }

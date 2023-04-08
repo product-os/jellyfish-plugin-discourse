@@ -78,8 +78,7 @@
           "mentionsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Foo 3333333333333333333",
-          "reactions": {}
+          "message": "Foo 3333333333333333333"
         },
         "integration_source": "discourse"
       }

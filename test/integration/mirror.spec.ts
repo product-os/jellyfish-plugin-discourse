@@ -8,6 +8,7 @@ import {
 } from 'autumndb';
 import Bluebird from 'bluebird';
 import _ from 'lodash';
+import nock from 'nock';
 import request from 'request';
 import { discoursePlugin } from '../../lib';
 
@@ -28,6 +29,9 @@ beforeAll(async () => {
 	await ctx.createUser(
 		defaultEnvironment.test.integration.discourse.nonModeratorUsername,
 	);
+
+	nock.cleanAll();
+	nock.enableNetConnect();
 });
 
 afterAll(() => {
@@ -68,6 +72,7 @@ const deleteTopic = async (id: string) => {
 				}
 
 				if (response.statusCode !== 200) {
+					console.log(response);
 					return reject(
 						new Error(
 							`Got ${response.statusCode}: ${JSON.stringify(body, null, 2)}`,
@@ -108,6 +113,7 @@ const getTopic = async (id: string) => {
 				}
 
 				if (response.statusCode !== 200) {
+					console.log(response);
 					return reject(
 						new Error(
 							`Got ${response.statusCode}: ${JSON.stringify(body, null, 2)}`,

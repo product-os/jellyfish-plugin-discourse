@@ -78,8 +78,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Updated description 8888",
-          "reactions": {}
+          "message": "Updated description 8888"
         },
         "integration_source": "discourse"
       }

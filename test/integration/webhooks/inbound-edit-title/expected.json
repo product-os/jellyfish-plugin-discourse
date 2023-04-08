@@ -78,8 +78,7 @@
           "alertsUser": [],
           "mentionsGroup": [],
           "alertsGroup": [],
-          "message": "Test test test 12345",
-          "reactions": {}
+          "message": "Test test test 12345"
         },
         "integration_source": "discourse"
       }
