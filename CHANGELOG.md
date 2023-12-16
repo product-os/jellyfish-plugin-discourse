@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 7.0.0 - 2023-12-16
+
+* Remove integration [Josh Bowling]
+
 ## 6.3.3 - 2023-08-12
 
 * Bump internal dependencies [Josh Bowling]

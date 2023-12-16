@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove integration
+      hash: 654435adb5fe71a6a46b3f29b32bd64e652a49d2
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 7.0.0
+  title: ""
+  date: 2023-12-16T05:11:47.481Z
+- commits:
     - subject: Bump internal dependencies
       hash: 1a08d90ea5db748965bc2c40d3fcc802abe44713
       body: ""
