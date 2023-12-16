@@ -2,8 +2,6 @@ type: "node"
 upstream:
   - repo: "autumndb"
     url: "https://github.com/product-os/autumndb"
-  - repo: "jellyfish-assert"
-    url: "https://github.com/product-os/jellyfish-assert"
   - repo: "jellyfish-environment"
     url: "https://github.com/product-os/jellyfish-environment"
   - repo: "jellyfish-worker"
