@@ -1,7 +1,5 @@
 import type { PluginDefinition } from '@balena/jellyfish-worker';
-import { actions } from './actions';
 import { contracts } from './contracts';
-import { integrations } from './integrations';
 
 // tslint:disable-next-line: no-var-requires
 const { version } = require('../package.json');
@@ -14,8 +12,6 @@ export const discoursePlugin = (): PluginDefinition => {
 		slug: 'plugin-discourse',
 		name: 'Discourse Plugin',
 		version,
-		actions,
 		contracts,
-		integrationMap: integrations,
 	};
 };
