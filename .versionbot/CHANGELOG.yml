@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove codeql
+      hash: d202ac6903edf9037768d21b910f758971143b47
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 7.0.1
+  title: ""
+  date: 2023-12-16T05:17:16.523Z
+- commits:
     - subject: Remove integration
       hash: 654435adb5fe71a6a46b3f29b32bd64e652a49d2
       body: ""

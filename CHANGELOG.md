@@ -4,6 +4,10 @@
 * Update version of required action-library plugin [Josh Bowling]
 * Add code, convert to TypeScript [Josh Bowling]
 
+## 7.0.1 - 2023-12-16
+
+* Remove codeql [Josh Bowling]
+
 ## 7.0.0 - 2023-12-16
 
 * Remove integration [Josh Bowling]
